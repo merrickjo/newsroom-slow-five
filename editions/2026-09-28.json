@@ -1,0 +1,119 @@
+{
+ "number": 1,
+ "date": "2026-09-28",
+ "weekday": "Monday",
+ "mix": "theology",
+ "intro": "Five pieces worth your slow attention this week: who should set the speed of AI, what a wealth tax does to a company's soul, why cheap weapons shrink empires, what it would mean for space to be a projection, and a fresh reading of Romans 1 on why we resist what we already know.",
+ "stories": [
+  {
+   "category": "AI",
+   "kicker": "Governing the frontier",
+   "headline": "A thousand strangers to set the speed limit",
+   "dek": "Hélène Landemore and Audrey Tang propose a standing global citizens' assembly to decide how fast frontier AI should move — and to hold labs to their word.",
+   "body": [
+    "The authors start from a problem every serious observer of AI now accepts: the people building the most capable systems say they would like to go slower, and cannot. Each lab fears that pausing hands the lead to a rival; Washington and Beijing reason the same way. Landemore, a Yale political theorist, and Tang, Taiwan's former digital minister, call this a double collective-action problem — a stag hunt in which everyone gains from restraint but no one trusts anyone else to hold.",
+    "Their remedy is not another treaty or another CEO pledge. It is a Global Citizens' Assembly on AI: about 1,000 people chosen by lottery from every continent, sitting continuously, briefed by independent evaluators who audit the labs. Labs would have to answer the assembly's recommendations publicly and within a fixed deadline, saying what they accept and what they reject. Enforcement would ride on existing hooks, chiefly EU regulation and voluntary participation agreements.",
+    "The case for sortition is legitimacy. Nobody's stake in the AI race depends on credentials or on winning an election, so a random sample of humanity has a claim to set limits that neither a board nor a single government can match. The authors lean on precedent: the OECD counts more than 800 deliberative bodies worldwide; the 2021 Global Assembly ran alongside COP26; Taiwan convened 447 citizens on AI integrity in 2024. On China, they argue a population-weighted lottery would hand Beijing roughly one seat in six — the least Western-dominated forum on offer — and that a refusal to join would itself be informative.",
+    "Concretely they ask for three things: an independent secretariat to fund the assembly, labs opening themselves to assembly-vetted evaluators, and pilot 'safety budgets' of 5–20% of compute under published accounting. They want a first cohort seated by spring 2027."
+   ],
+   "counterpoint": "Legitimacy is not leverage. An advisory body whose outputs labs can publicly reject changes the reputational cost of defection, not the incentive to defect. The stag hunt is broken by verification and enforcement, and the essay is thinnest precisely there.",
+   "why": "It is one of the few AI-governance proposals that treats the coordination problem as the real problem, rather than assuming regulators or labs can solve it alone. Watch whether any lab accepts the public-response obligation — that is the cheap, testable first step.",
+   "source": {
+    "outlet": "Noema",
+    "title": "Let The People Set The Pace Of Frontier AI",
+    "author": "Hélène Landemore & Audrey Tang",
+    "url": "https://www.noemamag.com/let-the-people-decide-the-pace-of-frontier-ai",
+    "published": "2026-09-23",
+    "readMins": 18
+   }
+  },
+  {
+   "category": "Economics",
+   "kicker": "Tax and control",
+   "headline": "What a wealth tax takes that money cannot measure",
+   "dek": "Palladium argues that taxing founders on paper valuations forces them to sell the one thing a private company exists to protect: control.",
+   "body": [
+    "Christian Angelopoulos's essay is prompted by California's proposed 5% annual tax on billionaires, but its real subject is ownership itself. His claim is that a private company's value to society is not only its cash flows but its governance — the fact that someone can run it for a purpose other than shareholder return.",
+    "His central case is In-N-Out Burger. Its sole owner can refuse to franchise, keep a tiny menu, pay above market and print Bible references on cups because she answers to no outside investor. A tax levied on the paper value of her stake, payable in cash, forces her to sell shares. Sell enough, and she has fiduciary duties to people who did not sign up for any of that.",
+    "The mechanism is sharpened with a hypothetical founder whose company raises money at a $10 billion valuation. On paper she is worth billions; in practice, a controlling block cannot be sold at the headline price, so meeting the bill means selling more than the arithmetic suggests. Year after year, the tax walks her below majority. He cites eBay v. Newmark, where a minority investor in Craigslist was able to overturn the founders' defences of the company's culture: once outsiders are inside, the founder's mission is legally subordinate to their interests.",
+    "From there he moves to the US Constitution's Takings Clause. If a tax can compel the sale of governance rights, where exactly is the line between taxation and confiscation? He concedes there is no clean line — almost any tax can force some asset sale — but argues courts should recognise when what is being taken is agency, not just wealth. His closing phrase is that private firms are 'infrastructure of liberty'."
+   ],
+   "counterpoint": "Wealth-tax designers know about illiquidity; deferral, payment in kind and non-voting share schemes exist precisely to avoid forced loss of control. The essay argues against the crudest version of the tax. And 'mission' cuts both ways: concentrated control also shields bad governance from accountability.",
+   "why": "The debate over wealth taxes usually runs on revenue and fairness. This piece reframes it around institutional diversity — whether an economy keeps room for firms run by conviction rather than by the median shareholder. That frame travels well beyond California, including to founder-led and family firms in Asia.",
+   "source": {
+    "outlet": "Palladium",
+    "title": "Wealth Taxes Could Kill Privately-Owned Companies",
+    "author": "Christian Angelopoulos",
+    "url": "https://www.palladiummag.com/2026/09/22/wealth-taxes-could-kill-privately-owned-companies/",
+    "published": "2026-09-22",
+    "readMins": 32
+   }
+  },
+  {
+   "category": "Politics",
+   "kicker": "History of violence",
+   "headline": "Iron, drones and the shrinking of empires",
+   "dek": "Works in Progress argues that when weapons become cheap and local, centralised power loses its grip — as it did at the end of the Bronze Age.",
+   "body": [
+    "Patrick Fitzsimmons opens with the Battle of Kadesh in 1274 BC, where Egypt and the Hittites fielded thousands of chariots. Within a few centuries both superpowers had collapsed or contracted. Historians blame drought, the Sea Peoples and revolt. Fitzsimmons adds a less-discussed variable: iron.",
+    "Bronze needs tin, and tin came from a handful of distant deposits. Whoever controlled those trade routes controlled the arsenal, and that concentration underwrote empire. Iron is the opposite: abundant, workable with a local bloomery furnace, available to villages at the edge of the map. Iron was not a better metal — good bronze is harder — it was a more accessible one. Its effect was political, not metallurgical. Lucretius already noticed that iron evened the odds of war.",
+    "The essay brings data to the story. Iron Age skeletons in the Middle East show more weapon injuries than Bronze Age ones; battles become more frequent where iron arrives; average reign lengths in Assyria, Babylon and Athens fall by about 29% after adoption. Fitzsimmons then connects this to Ukraine, where cheap drones destroy armour worth millions and, by the figures he cites, account for the large majority of recent casualties.",
+    "His most interesting move is the caveat. AI, he suggests, may look like iron but behave like tin: the capability is widely usable, but the frontier is controlled by a few providers who can gate access. Whether a technology decentralises power depends on where its chokepoints sit, not how clever it is."
+   ],
+   "counterpoint": "Monocausal readings of the Bronze Age collapse have a poor record, and correlation between iron adoption and instability is compatible with iron being a response to disorder as much as a cause. Drones also favour whoever can mass-produce them — which may be large states.",
+   "why": "The 'chokepoint' lens is a practical tool: ask of any technology whether its scarce input is local or controlled. It is a useful way to think about drones, chips and frontier models at once — and about which institutions will survive them.",
+   "source": {
+    "outlet": "Works in Progress",
+    "title": "Weapons of mass decentralization",
+    "author": "Patrick Fitzsimmons",
+    "url": "https://worksinprogress.co/issue/weapons-of-mass-decentralization/",
+    "published": "2026-09-23",
+    "readMins": 18
+   }
+  },
+  {
+   "category": "Science",
+   "kicker": "Physics of space",
+   "headline": "If gravity is a hologram, what is real?",
+   "dek": "Quanta surveys three decades of the holographic principle — and the unsettled question of whether space itself is fundamental.",
+   "body": [
+    "The holographic principle is the claim that everything happening inside a region of space can be fully described by information on its boundary, one dimension down. It grew out of black-hole physics: Bekenstein and Hawking found that a black hole's entropy scales with the area of its horizon, not its volume. Leonard Susskind took that seriously enough to propose that the world might work this way generally — an idea he has described as the least crazy of the crazy options.",
+    "The strongest evidence is the AdS/CFT correspondence of the late 1990s. It shows that gravity inside a particular kind of curved, bounded universe (anti-de Sitter space) is mathematically equivalent to an ordinary quantum theory, with no gravity at all, living on its boundary. Two theories physicists had struggled to reconcile turn out to be two descriptions of one thing.",
+    "The trouble is that we do not live in anti-de Sitter space. Our universe is expanding and de Sitter-like, with no obvious boundary on which to write the hologram. Charlie Wood's piece follows the current efforts to extend the idea, including proposals in which the 'screen' is not a surface at all but something far stranger.",
+    "The philosophical payoff is set out in three options. Either the boundary quantum information is real and three-dimensional space is emergent, like pixels producing a scene; or the bulk is real and holography is just a clever mathematical dual; or both are approximations of a deeper theory nobody has written down. Sceptics such as Latham Boyle question whether black-hole entropy even supports the holographic reading."
+   ],
+   "counterpoint": "Holography is proven in a toy universe and conjectured in ours. Until there is a de Sitter version with testable consequences, 'space is emergent' is an interpretation, not a finding.",
+   "why": "This is the clearest recent explainer of the idea that space may be downstream of information. It is the scientific background to many current claims about emergence, computation and reality — worth understanding precisely so you can tell where the physics stops and the metaphysics begins.",
+   "source": {
+    "outlet": "Quanta Magazine",
+    "title": "Gravity Seems Holographic. What Does That Mean for Reality?",
+    "author": "Charlie Wood",
+    "url": "https://www.quantamagazine.org/gravity-seems-holographic-what-does-that-mean-for-reality-20260925/",
+    "published": "2026-09-25",
+    "readMins": 14
+   }
+  },
+  {
+   "category": "Theology",
+   "kicker": "Paper · Themelios 51.2",
+   "headline": "The heart knows, and will not yield",
+   "dek": "A new exegesis of Romans 1:32 argues that the noetic effects of sin are less a broken intellect than a resisting heart.",
+   "body": [
+    "Paul S. Jeon's article in the summer issue of Themelios sits on a verse usually read as a coda to Paul's vice list: those who know God's righteous decree that such things deserve death not only do them but approve of those who practise them. Jeon argues the verse is the key to the whole of Romans 1:18–32.",
+    "His exegesis turns on three terms. Epignontes signals not vague awareness but full, experiential knowing. The verse states the moral content plainly: such acts are worthy of death. And syneudokousin describes active endorsement — taking pleasure together in what one knows to be wrong. Read with 1:18–21, where people 'suppress the truth in unrighteousness', the picture is of knowers who refuse to acknowledge what they know.",
+    "That matters for the doctrine of the noetic effects of sin. Jeon engages Calvin's 'seed of religion', Kuyper's claim that all faculties are spiritually oriented, and Plantinga's damaged sensus divinitatis. His criticism, made gently, is that Reformed epistemology has tended to describe suppression as cognitive malfunction. Drawing on N. Gray Sutanto's retrieval of Herman Bavinck, he proposes instead an affective model: the sense of God is a dispositional awareness of dependence, and suppression is a motivated refusal driven by fear, shame and the desire for autonomy — closer to repression than to ignorance.",
+    "The implications are pastoral. If unbelief is primarily a matter of what we love and fear, apologetics cannot be only argument. The better question becomes 'what do you want, and what are you afraid of?' — and exposure without grace only crushes."
+   ],
+   "counterpoint": "Pitting affective against cognitive risks a false dichotomy; Paul's 'darkened' and 'futile' thinking (1:21) is noetic in the plain sense. And Plantinga's model already locates the damage in the will's resistance, not just faculty failure — the contrast may be sharper than the sources.",
+   "why": "It gives a precise exegetical footing for something preachers sense: that people rarely reject Christ for lack of information. For anyone teaching Romans or doing apologetics among educated sceptics, it reframes the task from winning arguments to naming loves.",
+   "source": {
+    "outlet": "Themelios",
+    "title": "The Heart Knows but Will Not Yield: Affective Suppression and the Noetic Effects of Sin in Romans 1:32",
+    "author": "Paul S. Jeon",
+    "url": "https://www.thegospelcoalition.org/themelios/article/the-heart-knows-but-will-not-yield-affective-suppression-and-the-noetic-effects-of-sin-in-romans-1-32",
+    "published": "2026-08",
+    "readMins": 25
+   }
+  }
+ ]
+}
