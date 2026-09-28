@@ -78,7 +78,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .body p{margin:0 0 1.05em;hyphens:auto}
 .body{padding-top:18px}
 .body p:first-child::first-letter{font-family:var(--serif);font-weight:700;float:left;font-size:3.3em;line-height:.9;padding:4px 8px 0 0}
+.body h2.sub{font-family:var(--cond);font-weight:600;font-size:.86em;letter-spacing:.07em;text-transform:uppercase;margin:1.7em 0 .6em;padding-top:10px;border-top:1px solid var(--hair)}
 .box{border-top:1.5px solid var(--rule);padding-top:10px;margin-top:22px}
+.box.qs ol{margin:4px 0 0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+.box.qs li{font-family:var(--serif)}
 .box h4{font-family:var(--mono);font-size:.68em;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px}
 .box p{margin:0}
 .box.why{border:2px solid var(--rule);padding:14px 16px}
@@ -164,7 +167,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   const storyKey = (ed, i) => ed.date + '_' + (i+1);
   const findEd = date => editions.find(e => e.date === date) || null;
   const current = () => state.ed ? findEd(state.ed) : editions[0];
-  const readMins = s => Math.max(1, Math.round(([...(s.body||[]), s.counterpoint||'', s.why||''].join(' ').split(/\s+/).length)/220));
+  const readMins = s => Math.max(1, Math.round(([...(s.body||[]), s.counterpoint||'', s.why||'', ...(s.questions||[])].join(' ').replace(/## /g,'').split(/\s+/).length)/230));
 
   function markRead(k){ if(!readSet.has(k)){ readSet.add(k); store.set(READ_KEY, [...readSet].slice(-400)); } }
 
@@ -233,9 +236,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
           '<p class="dek">' + esc(s.dek) + '</p>' +
           '<div class="byline">Digest of ' + esc(src.author||'') + ', <i>' + esc(src.outlet||'') + '</i> · ' + readMins(s) + ' min read</div>' +
         '</header>' +
-        '<div class="body">' + (s.body||[]).map(p => '<p>' + esc(p) + '</p>').join('') + '</div>' +
+        '<div class="body">' + (s.body||[]).map(p => p.startsWith('## ') ? '<h2 class="sub">' + esc(p.slice(3)) + '</h2>' : '<p>' + esc(p) + '</p>').join('') + '</div>' +
         (s.counterpoint ? '<section class="box"><h4>Strongest counterpoint</h4><p>' + esc(s.counterpoint) + '</p></section>' : '') +
         (s.why ? '<section class="box why"><h4>Why it matters</h4><p>' + esc(s.why) + '</p></section>' : '') +
+        ((s.questions||[]).length ? '<section class="box qs"><h4>Questions to sit with</h4><ol>' + s.questions.map(q => '<li>' + esc(q) + '</li>').join('') + '</ol></section>' : '') +
         '<footer class="src">' +
           '<div class="m">Read the original</div>' +
           '<div class="t">' + esc(src.title||'') + '</div>' +
@@ -273,7 +277,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     const sizes = [16,18,20,22];
     app.innerHTML = '<div class="about">' +
       '<h2 class="sec-title">About Newsroom Slow Five</h2>' +
-      '<p>Five long reads, digested, twice a week. Each story is a ~400-word synthesis of one serious piece: the argument, its strongest counterpoint, and why it matters. Then a link to the original, if you want the full meal.</p>' +
+      '<p>Five long reads, digested, twice a week. Each story is a 5–6 minute synthesis (about 1,200–1,400 words) of one serious piece: the argument and its evidence, the strongest counterpoint, why it matters, and questions to sit with. Then a link to the original, if you want the full meal.</p>' +
       '<h3>Schedule</h3><p>New editions every Monday and Thursday at 06:00 Jakarta time.</p>' +
       '<h3>Editorial mix</h3>' +
       '<table class="mix"><tbody>' +

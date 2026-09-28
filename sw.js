@@ -1,6 +1,6 @@
 // Newsroom Slow Five service worker: app shell cache-first, editions network-first.
-const SHELL = 'slowfive-shell-v1';
-const DATA = 'slowfive-data-v1';
+const SHELL = 'slowfive-shell-v2';
+const DATA = 'slowfive-data-v2';
 const SHELL_FILES = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', e => {
