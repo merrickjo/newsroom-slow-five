@@ -62,8 +62,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* story list */
 .list{list-style:none;margin:8px 0 0;padding:0}
 .item{border-bottom:1px solid var(--hair)}
-.item button,.item a{display:grid;grid-template-columns:2.2rem 1fr;gap:4px 12px;width:100%;text-align:left;padding:18px 0}
-.item a{text-decoration:none}
+.item button{display:grid;grid-template-columns:2.2rem 1fr;gap:4px 12px;width:100%;text-align:left;padding:18px 0}
 .num{font-family:var(--serif);font-weight:700;font-size:1.9em;line-height:1;grid-row:span 3}
 .cat{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.66em;letter-spacing:.1em;text-transform:uppercase}
 .tag{background:var(--chip-bg);color:var(--chip-fg);padding:2px 7px 1px;font-weight:600}
@@ -169,6 +168,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     return iso||'';
   };
   const storyKey = (ed, i) => ed.date + '_' + (i+1);
+  function editionStories(ed){
+    const r = ed.recall;
+    return r && typeof r.headline==='string' && Array.isArray(r.body) && r.body.length
+      ? [...ed.stories, {...r, category:'Recall'}] : ed.stories;
+  }
   const findEd = date => editions.find(e => e.date === date) || null;
   const current = () => state.ed ? findEd(state.ed) : editions[0];
   const readMins = s => Math.max(1, Math.round(([...(s.body||[]), s.counterpoint||'', s.why||'', ...(s.questions||[])].join(' ').replace(/## /g,'').split(/\s+/).length)/230));
@@ -198,39 +202,29 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 
   function masthead(ed){
     const isLatest = editions[0] && ed.date === editions[0].date;
+    const stories = editionStories(ed);
+    const count = stories.length > ed.stories.length ? 'Five stories + Recall' : 'Five stories';
     return '<header class="mast">' +
       '<div class="mast-top"><span>Newsroom · No. ' + esc(String(ed.number).padStart(3,'0')) + '</span><span>' + (isLatest ? 'Latest edition' : 'From the archive') + '</span></div>' +
       '<h1 class="brand">Slow Five</h1>' +
-      '<div class="dateline"><span>' + esc(fmtDate(ed.date)) + '</span><span>Five stories · ' + ed.stories.reduce((a,s)=>a+readMins(s),0) + ' min</span></div>' +
+      '<div class="dateline"><span>' + esc(fmtDate(ed.date)) + '</span><span>' + count + ' · ' + stories.reduce((a,s)=>a+readMins(s),0) + ' min</span></div>' +
       '</header>';
-  }
-
-  function recallUrl(ed){
-    if(ed.recall !== true || !/^\d{4}-\d{2}-\d{2}$/.test(ed.date)) return '';
-    const file = 'Newsroom Recall/' + ed.date + '.md';
-    return 'obsidian://open?vault=Vault&amp;file=' + encodeURIComponent(file);
   }
 
   function renderEdition(ed){
     setHash(ed.date === (editions[0]||{}).date ? '' : 'e' + ed.date);
-    const items = ed.stories.map((s,i) => {
+    const items = editionStories(ed).map((s,i) => {
       const k = storyKey(ed,i), isRead = readSet.has(k);
       return '<li class="item' + (isRead?' is-read':'') + '"><button data-open="' + i + '">' +
         '<span class="num">' + (i+1) + '</span>' +
-        '<span class="cat"><span class="tag' + (s.category==='Theology'?' theo':'') + '">' + esc(s.category) + '</span><span>' + esc(s.source.outlet) + ' · ' + readMins(s) + ' min</span>' + (isRead ? '<span class="read-mark">✓ Read</span>' : '') + '</span>' +
+        '<span class="cat"><span class="tag' + (s.category==='Theology'?' theo':'') + '">' + esc(s.category) + '</span><span>' + esc(s.source?.outlet || 'Essay') + ' · ' + readMins(s) + ' min</span>' + (isRead ? '<span class="read-mark">✓ Read</span>' : '') + '</span>' +
         '<h3>' + esc(s.headline) + '</h3>' +
         '<p class="dek">' + esc(s.dek) + '</p>' +
       '</button></li>';
     }).join('');
-    const url = recallUrl(ed);
-    const recall = url ? '<li class="item"><a href="' + url + '">' +
-      '<span class="num" aria-hidden="true">+</span>' +
-      '<span class="cat"><span class="tag">Recall</span><span>5 min</span></span>' +
-      '<h3>From your reading notes</h3><p class="dek">Open your essay in Obsidian ↗</p>' +
-      '</a></li>' : '';
     app.innerHTML = masthead(ed) +
       '<p class="intro">' + esc(ed.intro) + '</p>' +
-      '<ol class="list">' + items + recall + '</ol>' +
+      '<ol class="list">' + items + '</ol>' +
       (dbStatus==='offline' ? '<p class="note">Offline: showing your saved copy. New editions appear when you reconnect.</p>' : '');
     app.querySelectorAll('[data-open]').forEach(b => b.addEventListener('click', () => openStory(ed.date, +b.dataset.open)));
     window.scrollTo(0,0);
@@ -239,48 +233,57 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   function openStory(date, i){ state = {view:'story', ed:date, story:i}; render(); }
 
   function renderStory(ed, i){
-    const s = ed.stories[i]; if(!s){ state.view='today'; return render(); }
+    const stories = editionStories(ed);
+    const s = stories[i]; if(!s){ state.view='today'; return render(); }
     markRead(storyKey(ed,i));
     setHash('e' + ed.date + '_' + (i+1));
     const src = s.source || {};
-    const recall = i === ed.stories.length - 1 ? recallUrl(ed) : '';
+    const isRecall = i === ed.stories.length;
+    const next = stories[i+1];
+    const nextLabel = !next ? 'Back to edition' : next.category==='Recall' ? 'Next: Recall →' : 'Next story →';
     app.innerHTML =
       '<button class="back" id="back-btn">← No. ' + esc(String(ed.number).padStart(3,'0')) + ' · ' + esc(fmtDate(ed.date)) + '</button>' +
       '<article>' +
         '<header class="art-head">' +
-          '<div class="cat"><span class="tag' + (s.category==='Theology'?' theo':'') + '">' + esc(s.category) + '</span><span>' + (i+1) + ' of ' + ed.stories.length + ' · ' + esc(s.kicker||'') + '</span></div>' +
+          '<div class="cat"><span class="tag' + (s.category==='Theology'?' theo':'') + '">' + esc(s.category) + '</span><span>' + (i+1) + ' of ' + stories.length + ' · ' + esc(s.kicker||'') + '</span></div>' +
           '<h1>' + esc(s.headline) + '</h1>' +
           '<p class="dek">' + esc(s.dek) + '</p>' +
-          '<div class="byline">Digest of ' + esc(src.author||'') + ', <i>' + esc(src.outlet||'') + '</i> · ' + readMins(s) + ' min read</div>' +
+          '<div class="byline">' +
+            (isRecall ? 'Essay' : 'Digest of ' + esc(src.author||'') + ', <i>' + esc(src.outlet||'') + '</i>') +
+            ' · ' + readMins(s) + ' min read</div>' +
         '</header>' +
         '<div class="body">' + (s.body||[]).map(p => p.startsWith('## ') ? '<h2 class="sub">' + esc(p.slice(3)) + '</h2>' : '<p>' + esc(p) + '</p>').join('') + '</div>' +
         (s.counterpoint ? '<section class="box"><h4>Strongest counterpoint</h4><p>' + esc(s.counterpoint) + '</p></section>' : '') +
         (s.why ? '<section class="box why"><h4>Why it matters</h4><p>' + esc(s.why) + '</p></section>' : '') +
-        ((s.questions||[]).length ? '<section class="box qs"><h4>Questions to sit with</h4><ol>' + s.questions.map(q => '<li>' + esc(q) + '</li>').join('') + '</ol></section>' : '') +
-        '<footer class="src">' +
+        ((s.questions||[]).length ? '<section class="box qs"><h4>' + (isRecall ? 'Recall prompt' : 'Questions to sit with') + '</h4><ol>' + s.questions.map(q => '<li>' + esc(q) + '</li>').join('') + '</ol></section>' : '') +
+        (isRecall
+          ? (Array.isArray(s.sources) && s.sources.length
+            ? '<footer class="src"><div class="m">Sources</div>' + s.sources.map(source => '<div>' + esc(source) + '</div>').join('') + '</footer>'
+            : '')
+          : '<footer class="src">' +
           '<div class="m">Read the original</div>' +
           '<div class="t">' + esc(src.title||'') + '</div>' +
           '<div class="m">' + esc(src.author||'') + ' · ' + esc(src.outlet||'') + ' · ' + esc(fmtPub(src.published)) + (src.readMins ? ' · ~' + src.readMins + ' min' : '') + '</div>' +
           (src.url ? '<a class="cta" href="' + esc(src.url) + '" target="_blank" rel="noopener">Open at ' + esc(src.outlet||'source') + ' ↗</a>' : '') +
-        '</footer>' +
+        '</footer>') +
       '</article>' +
       '<div class="pager">' +
         '<button id="prev-btn"' + (i===0?' disabled':'') + '>← Previous</button>' +
-        (recall ? '<a class="back" href="' + recall + '">Open Recall in Obsidian ↗</a>' : '') +
-        '<button id="next-btn">' + (i===ed.stories.length-1 ? 'Back to edition' : 'Next story →') + '</button>' +
+        '<button id="next-btn">' + nextLabel + '</button>' +
       '</div>';
     document.getElementById('back-btn').onclick = () => { state = {view:'today', ed:ed.date, story:null}; render(); };
     document.getElementById('prev-btn').onclick = () => { if(i>0) openStory(ed.date, i-1); };
-    document.getElementById('next-btn').onclick = () => { if(i < ed.stories.length-1) openStory(ed.date, i+1); else { state={view:'today', ed:ed.date, story:null}; render(); } };
+    document.getElementById('next-btn').onclick = () => { if(next) openStory(ed.date, i+1); else { state={view:'today', ed:ed.date, story:null}; render(); } };
     window.scrollTo(0,0);
   }
 
   function renderArchive(){
     setHash('archive');
     const rows = editions.map(e => {
-      const done = e.stories.filter((_,i)=>readSet.has(storyKey(e,i))).length;
+      const stories = editionStories(e);
+      const done = stories.filter((_,i)=>readSet.has(storyKey(e,i))).length;
       return '<li><button data-ed="' + esc(e.date) + '">' +
-        '<span class="d">No. ' + String(e.number).padStart(3,'0') + ' · ' + esc(fmtDate(e.date)) + ' · ' + done + '/' + e.stories.length + ' read</span>' +
+        '<span class="d">No. ' + String(e.number).padStart(3,'0') + ' · ' + esc(fmtDate(e.date)) + ' · ' + done + '/' + stories.length + ' read</span>' +
         '<span class="h">' + esc(e.stories.map(s=>s.headline).slice(0,2).join(' · ')) + '</span>' +
       '</button></li>';
     }).join('');
@@ -295,7 +298,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     const sizes = [16,18,20,22];
     app.innerHTML = '<div class="about">' +
       '<h2 class="sec-title">About Newsroom Slow Five</h2>' +
-      '<p>Five long reads, digested, twice a week. Each story is a 5–6 minute synthesis (about 1,200–1,400 words) of one serious piece: the argument and its evidence, the strongest counterpoint, why it matters, and questions to sit with. Then a link to the original, if you want the full meal.</p>' +
+      '<p>Five long reads, digested, twice a week. Each story is a 5–6 minute synthesis (about 1,200–1,400 words) of one serious piece: the argument and its evidence, the strongest counterpoint, why it matters, and questions to sit with. Then a link to the original, if you want the full meal. Recall is a five-minute essay that revisits ideas from books and podcasts.</p>' +
       '<h3>Schedule</h3><p>New editions every Monday and Thursday at 06:00 Jakarta time.</p>' +
       '<h3>Editorial mix</h3>' +
       '<table class="mix"><tbody>' +

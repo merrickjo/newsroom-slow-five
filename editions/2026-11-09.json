@@ -210,5 +210,36 @@
    }
   }
  ],
- "recall": true
+ "recall": {
+  "kicker": "Memory and attention",
+  "headline": "Give the idea somewhere to return",
+  "dek": "A saved highlight becomes useful when you can recognise the moment to use it.",
+  "body": [
+   "You are editing a slide. The headline says, “We need to improve how we prioritise.” You know precisely what that means because you have spent three weeks inside the problem. Tomorrow, someone in the meeting will see the headline for eight seconds, hear your explanation, and move on. A week later, when two good projects compete for the same people, will that sentence help them choose?",
+   "The same question applies to the ideas you save. A highlight can be clear, important and easy to find by title. The next time it could change your mind, you may have no reason to search for it. The situation will present itself as two projects, one team, and a deadline. It will never announce itself as the exact paragraph you underlined on a Sunday night.",
+   "## The difference between a tap and a tune",
+   "In Made to Stick, Chip and Dan Heath describe a game where one person taps the rhythm of a familiar song and someone else guesses the title. The tapper hears the tune internally and has trouble imagining what the other person hears. The listener gets isolated knocks. The rhythm is technically present, but the experience that makes it meaningful is available to only one of them.",
+   "The Heaths use this to explain the curse of knowledge. Once you know the story behind an idea, a few words can summon the entire thing for you. You are tempted to give other people those words and assume they will hear what you hear. The words may be accurate and still leave them guessing. The instruction to improve prioritisation can mean holding fewer meetings, making harder trade-offs, or asking managers to agree sooner. Each interpretation could produce a different decision.",
+   "A note can create that same gap between your past and future selves. When you saved an excerpt, the book's example and whatever you were thinking about that afternoon supplied the tune. By the time the note resurfaces, the line may have lost its surroundings. A short note about the situation where the idea applies can restore more of the original thought than a longer extract from the page.",
+   "## Why a missing idea can feel like a forgotten one",
+   "In his Modern Wisdom conversation, Charan Ranganath describes a familiar kind of forgetting. The name you wanted during a conversation comes to you an hour later, after it would have been useful. He distinguishes losing access to a memory because it has faded from having a memory that the present situation fails to bring to mind. Those two experiences can feel identical while you are struggling to remember.",
+   "He also frames memory as something we use to understand the present and imagine what comes next. You remember how a similar meeting went partly so you can anticipate what might happen in this one. Even a modest fragment can matter when it reaches you in time. A memory of how two teams left a meeting with different interpretations can prompt you to ask each team what it thinks was decided.",
+   "Read together, the interview and the book suggest a way to write a useful reminder. Describe the moment that should bring the idea back. You can do that while the book is still open and the connection is fresh. It may be a phrase you often hear, a recurring decision, or the first visible sign that a situation is developing. Future you has a better chance of recognising that moment than of recalling which author once wrote about it.",
+   "## Try writing for the moment of use",
+   "Say you save the Heaths' point about the curse of knowledge. A possible note is, “When a slide gives advice any team could agree with, write down one decision it would change.” The note gives you something to recognise on your screen and something to do next. You could make it more specific by adding the kind of choice that usually gets postponed. If the slide asks two teams to focus, name the project each team would actually pause.",
+   "A cue can be a question you ask at a particular time. Before sharing a recommendation, ask someone unfamiliar with the background what they think you are asking them to do. If their answer differs from yours, you have learned where the shared words hid separate assumptions. You can fix the explanation while the cost is still one sentence and a short conversation.",
+   "An analogy or a story can serve the same purpose. The tapping game is easy to replay in your head the next time you watch someone explain a dense chart. You can imagine which parts of the melody they already know and which parts the audience has to infer. The story gives the abstraction a shape, and the shape can come back in a situation that looks different on the surface.",
+   "The reminder can be as small as a line beside the document you already open. Put the question at the top of the slide template, or beside the agenda item where a choice will be made. Its location does part of the work. It reaches you while you can still change the slide or ask the question.",
+   "## Remember the condition as well as the line",
+   "A memorable idea can travel further than its evidence. One bad meeting might make you remember a vivid lesson about unclear priorities, when the real problem was a team with no authority to make a choice. A sharp cue is worth pairing with a question about what would make the lesson inapplicable. For the slide, the question might be whether the audience understands the trade-off perfectly and simply disagrees with it. In that case, clearer wording has done its job, and the next step is a decision.",
+   "The useful test for a saved idea is whether you can recognise a situation where it earns its place. The next time you reread a highlight that still feels important, try giving it one plausible job. Picture the decision, the words people might use, and the earliest moment you could notice what is happening. Write a sentence your future self could act on while there is still time to act."
+  ],
+  "questions": [
+   "Which idea from an old note would change a decision you expect to face this week? Describe the first sign that would tell you to use it."
+  ],
+  "sources": [
+   "Chip Heath and Dan Heath, Made to Stick.",
+   "Charan Ranganath on Modern Wisdom #939, 28:54 and 1:11:10."
+  ]
+ }
 }

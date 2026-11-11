@@ -10,10 +10,10 @@ Each edition is one JSON file in `editions/` (`YYYY-MM-DD.json`) listed in `edit
 
 ## Recall
 
-A private five-minute essay can accompany an edition. After saving the essay as
-`Newsroom Recall/YYYY-MM-DD.md` in the Obsidian vault named `Vault`, set
-`"recall": true` in that edition's JSON. The reader opens the note in Obsidian
-from the edition and the last story. The device needs Obsidian and the synced
-note. Editions without the marker render as usual. The public JSON and mirror
-carry only the boolean. Keep essay text, titles, source notes and links in the
-vault.
+Add one five-minute, non-theology essay as the optional top-level `recall`
+object in the edition JSON. The five news entries remain in `stories`.
+Recall uses `kicker`, `headline`, `dek`, `body` (paragraph strings and
+`## ` subheads), `questions` (one prompt), and `sources` (public attribution
+strings). It appears after story five in the same reader, with read tracking
+and offline caching. Keep vault paths, private clip links and raw notes out
+of the published edition and its mirror.
