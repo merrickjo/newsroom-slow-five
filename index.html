@@ -62,7 +62,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* story list */
 .list{list-style:none;margin:8px 0 0;padding:0}
 .item{border-bottom:1px solid var(--hair)}
-.item button{display:grid;grid-template-columns:2.2rem 1fr;gap:4px 12px;width:100%;text-align:left;padding:18px 0}
+.item button,.item a{display:grid;grid-template-columns:2.2rem 1fr;gap:4px 12px;width:100%;text-align:left;padding:18px 0}
+.item a{text-decoration:none}
 .num{font-family:var(--serif);font-weight:700;font-size:1.9em;line-height:1;grid-row:span 3}
 .cat{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.66em;letter-spacing:.1em;text-transform:uppercase}
 .tag{background:var(--chip-bg);color:var(--chip-fg);padding:2px 7px 1px;font-weight:600}
@@ -204,6 +205,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       '</header>';
   }
 
+  function recallUrl(ed){
+    if(ed.recall !== true || !/^\d{4}-\d{2}-\d{2}$/.test(ed.date)) return '';
+    const file = 'Newsroom Recall/' + ed.date + '.md';
+    return 'obsidian://open?vault=Vault&amp;file=' + encodeURIComponent(file);
+  }
+
   function renderEdition(ed){
     setHash(ed.date === (editions[0]||{}).date ? '' : 'e' + ed.date);
     const items = ed.stories.map((s,i) => {
@@ -215,9 +222,15 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
         '<p class="dek">' + esc(s.dek) + '</p>' +
       '</button></li>';
     }).join('');
+    const url = recallUrl(ed);
+    const recall = url ? '<li class="item"><a href="' + url + '">' +
+      '<span class="num" aria-hidden="true">+</span>' +
+      '<span class="cat"><span class="tag">Recall</span><span>5 min</span></span>' +
+      '<h3>From your reading notes</h3><p class="dek">Open your essay in Obsidian ↗</p>' +
+      '</a></li>' : '';
     app.innerHTML = masthead(ed) +
       '<p class="intro">' + esc(ed.intro) + '</p>' +
-      '<ol class="list">' + items + '</ol>' +
+      '<ol class="list">' + items + recall + '</ol>' +
       (dbStatus==='offline' ? '<p class="note">Offline: showing your saved copy. New editions appear when you reconnect.</p>' : '');
     app.querySelectorAll('[data-open]').forEach(b => b.addEventListener('click', () => openStory(ed.date, +b.dataset.open)));
     window.scrollTo(0,0);
@@ -230,6 +243,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     markRead(storyKey(ed,i));
     setHash('e' + ed.date + '_' + (i+1));
     const src = s.source || {};
+    const recall = i === ed.stories.length - 1 ? recallUrl(ed) : '';
     app.innerHTML =
       '<button class="back" id="back-btn">← No. ' + esc(String(ed.number).padStart(3,'0')) + ' · ' + esc(fmtDate(ed.date)) + '</button>' +
       '<article>' +
@@ -252,6 +266,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       '</article>' +
       '<div class="pager">' +
         '<button id="prev-btn"' + (i===0?' disabled':'') + '>← Previous</button>' +
+        (recall ? '<a class="back" href="' + recall + '">Open Recall in Obsidian ↗</a>' : '') +
         '<button id="next-btn">' + (i===ed.stories.length-1 ? 'Back to edition' : 'Next story →') + '</button>' +
       '</div>';
     document.getElementById('back-btn').onclick = () => { state = {view:'today', ed:ed.date, story:null}; render(); };
