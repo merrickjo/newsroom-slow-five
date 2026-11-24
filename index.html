@@ -399,6 +399,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     document.addEventListener('keydown', onKey);
     document.addEventListener('visibilitychange', onHide);
     app.addEventListener('click', onTap);
+    window.__nrTurn = d => { turn(d); return true; };   // lets the Android app turn pages with the volume keys
     if(over) over.onclick = () => { savePos(key, null); resumed = false; over.hidden = true; window.scrollTo(0, 0); settle(); };
     if(rec){
       const restore = () => { placeAt(rec); restoreY = window.scrollY; settle(); };
@@ -414,6 +415,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       document.removeEventListener('keydown', onKey);
       document.removeEventListener('visibilitychange', onHide);
       app.removeEventListener('click', onTap);
+      window.__nrTurn = null;
     };
   }
 
