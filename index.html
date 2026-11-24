@@ -203,10 +203,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   function masthead(ed){
     const isLatest = editions[0] && ed.date === editions[0].date;
     const stories = editionStories(ed);
-    const count = stories.length > ed.stories.length ? 'Five stories + Recall' : 'Five stories';
+    const pil = ed.mix === 'pilgrim';
+    const count = pil ? 'Pilgrim edition · five parts' : stories.length > ed.stories.length ? 'Five stories + Recall' : 'Five stories';
     return '<header class="mast">' +
-      '<div class="mast-top"><span>Newsroom · No. ' + esc(String(ed.number).padStart(3,'0')) + '</span><span>' + (isLatest ? 'Latest edition' : 'From the archive') + '</span></div>' +
-      '<h1 class="brand">Slow Five</h1>' +
+      '<div class="mast-top"><span>Newsroom · No. ' + esc(String(ed.number).padStart(3,'0')) + (pil && ed.pilgrimDay ? ' · Holy Land Day ' + esc(ed.pilgrimDay) + ' of 23' : '') + '</span><span>' + (isLatest ? 'Latest edition' : 'From the archive') + '</span></div>' +
+      '<h1 class="brand">' + (pil ? 'Slow Five <span>· Pilgrim</span>' : 'Slow Five') + '</h1>' +
       '<div class="dateline"><span>' + esc(fmtDate(ed.date)) + '</span><span>' + count + ' · ' + stories.reduce((a,s)=>a+readMins(s),0) + ' min</span></div>' +
       '</header>';
   }
@@ -249,7 +250,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
           '<h1>' + esc(s.headline) + '</h1>' +
           '<p class="dek">' + esc(s.dek) + '</p>' +
           '<div class="byline">' +
-            (isRecall ? 'Essay' : 'Digest of ' + esc(src.author||'') + ', <i>' + esc(src.outlet||'') + '</i>') +
+            (isRecall ? 'Essay' : (ed.mix === 'pilgrim' ? 'Key source: ' : 'Digest of ') + esc(src.author||'') + ', <i>' + esc(src.outlet||'') + '</i>') +
             ' · ' + readMins(s) + ' min read</div>' +
         '</header>' +
         '<div class="body">' + (s.body||[]).map(p => p.startsWith('## ') ? '<h2 class="sub">' + esc(p.slice(3)) + '</h2>' : '<p>' + esc(p) + '</p>').join('') + '</div>' +
