@@ -1,4 +1,4 @@
-# Newsroom Slow Five
+# Newsroom
 
 Five slow-journalism long reads, digested twice a week (Monday and Thursday, 06:00 WIB). E-ink-first installable PWA.
 

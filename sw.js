@@ -1,5 +1,5 @@
-// Newsroom Slow Five service worker: app shell cache-first, editions network-first.
-const SHELL = 'slowfive-shell-v7';
+// Newsroom service worker: app shell cache-first, editions network-first.
+const SHELL = 'slowfive-shell-v8';
 const DATA = 'slowfive-data-v2';
 const SHELL_FILES = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'];
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Newsroom Slow Five</title>
+<title>Newsroom</title>
 <meta name="description" content="Five slow-journalism long reads, digested twice a week.">
 <meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Slow Five">
+<meta name="apple-mobile-web-app-title" content="Newsroom">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,6 +96,24 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .pager button{border-bottom:2px solid var(--ink);padding:8px 0;min-height:44px}
 .pager button[disabled]{opacity:.35;cursor:default}
 
+/* resume + close (no animation: e-ink) */
+.wrap.story{padding-top:64px}
+.readbar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:9;background:var(--paper);border-bottom:1px solid var(--hair)}
+.readbar-in{max-width:40rem;margin:0 auto;padding:0 18px;height:46px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.readbar .back{min-height:44px;display:inline-flex;align-items:center}
+.readbar .left{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:.68em;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);white-space:nowrap}
+.readbar .left button{text-decoration:underline;text-underline-offset:3px;min-height:44px;letter-spacing:.08em;text-transform:uppercase}
+.resume-cta{margin:12px 0 2px;text-align:left}
+.list-end{margin-top:22px}
+.close h1{font-family:var(--serif);font-weight:700;font-size:2.3em;line-height:1.12;letter-spacing:-.01em;margin:22px 0 10px;text-wrap:balance}
+.close .line{font-family:var(--serif);font-size:1.08em;color:var(--ink-2);margin:0 0 22px}
+.stamp{display:inline-block;border:3px solid var(--rule);padding:10px 16px 8px;font-family:var(--mono);font-size:.72em;letter-spacing:.1em;text-transform:uppercase;line-height:1.8}
+.stamp .st{font-weight:600;border-top:1.5px solid var(--rule);margin-top:6px;padding-top:6px;letter-spacing:.2em}
+.next{border-top:3px solid var(--rule);margin-top:28px;padding-top:14px}
+.next .m{font-family:var(--mono);font-size:.7em;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.next .when{font-family:var(--serif);font-weight:700;font-size:1.4em;line-height:1.25;margin:6px 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+
 /* archive + about */
 .sec-title{font-family:var(--serif);font-weight:700;font-size:1.8em;margin:6px 0 4px}
 .arch{list-style:none;margin:12px 0 0;padding:0}
@@ -142,14 +160,16 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 <script>
 (function(){
   const app = document.getElementById('app');
-  const CACHE_KEY = 'slowfive.editions.v1', READ_KEY = 'slowfive.read.v1', PREF_KEY = 'slowfive.prefs.v1';
+  const CACHE_KEY = 'slowfive.editions.v1', READ_KEY = 'slowfive.read.v1', PREF_KEY = 'slowfive.prefs.v1', POS_KEY = 'slowfive.pos.v1';
   const store = {
     get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
     set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
   };
   let editions = store.get(CACHE_KEY, []);   // newest first
   let readSet = new Set(store.get(READ_KEY, []));
-  let prefs = store.get(PREF_KEY, {size:18});
+  let prefs = Object.assign({size:18, tap:true}, store.get(PREF_KEY, {}));
+  let posMap = store.get(POS_KEY, {});   // storyKey -> {b: block index, f: fraction of block, m: minutes left, t: time}
+  let teardown = null;                    // cleans up the reader's listeners when the view changes
   let state = {view:'today', ed:null, story:null};
   let dbStatus = 'loading';
 
@@ -177,17 +197,36 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   const current = () => state.ed ? findEd(state.ed) : editions[0];
   const readMins = s => Math.max(1, Math.round(([...(s.body||[]), s.counterpoint||'', s.why||'', ...(s.questions||[])].join(' ').replace(/## /g,'').split(/\s+/).length)/230));
 
+  // readSet means "finished" (a story is marked when its end is reached; older entries meant "opened").
   function markRead(k){ if(!readSet.has(k)){ readSet.add(k); store.set(READ_KEY, [...readSet].slice(-400)); } }
+  const wc = t => String(t||'').split(/\s+/).filter(Boolean).length;
+  function savePos(k, rec){
+    if(rec) posMap[k] = rec; else delete posMap[k];
+    const ks = Object.keys(posMap);
+    if(ks.length > 60) ks.sort((a,b) => (posMap[a].t||0) - (posMap[b].t||0)).slice(0, ks.length - 60).forEach(x => delete posMap[x]);
+    store.set(POS_KEY, posMap);
+  }
+  function leftNote(ed){
+    let left = 0, touched = false;
+    editionStories(ed).forEach((s,i) => {
+      const k = storyKey(ed,i);
+      if(readSet.has(k)){ touched = true; return; }
+      if(posMap[k]){ touched = true; left += posMap[k].m; } else left += readMins(s);
+    });
+    return touched ? (left ? ' · ' + left + ' min left' : ' · all read') : '';
+  }
 
   function setNav(){
     document.querySelectorAll('.nav button').forEach(b => {
-      const on = b.dataset.view === (state.view === 'story' ? 'today' : state.view);
+      const on = b.dataset.view === (state.view === 'story' || state.view === 'close' ? 'today' : state.view);
       b.setAttribute('aria-current', on ? 'page' : 'false');
     });
   }
   function setHash(h){ try{ history.replaceState(null,'', h ? '#'+h : location.pathname); }catch(e){} }
 
   function render(){
+    if(teardown){ teardown(); teardown = null; }
+    app.classList.toggle('story', state.view === 'story');
     setNav();
     if(state.view==='archive') return renderArchive();
     if(state.view==='about') return renderAbout();
@@ -196,6 +235,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       app.innerHTML = '<div class="empty">' + (dbStatus==='loading' ? 'Loading this week\'s edition…' : 'No edition yet. The next one arrives Monday or Thursday at 06:00 WIB.') + '</div>';
       return;
     }
+    if(state.view==='close') return renderClose(ed);
     if(state.view==='story' && state.story!=null) return renderStory(ed, state.story);
     renderEdition(ed);
   }
@@ -207,8 +247,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     const count = pil ? 'Pilgrim edition · five parts' : stories.length > ed.stories.length ? 'Five stories + Recall' : 'Five stories';
     return '<header class="mast">' +
       '<div class="mast-top"><span>Newsroom · No. ' + esc(String(ed.number).padStart(3,'0')) + (pil && ed.pilgrimDay ? ' · Holy Land Day ' + esc(ed.pilgrimDay) + ' of 23' : '') + '</span><span>' + (isLatest ? 'Latest edition' : 'From the archive') + '</span></div>' +
-      '<h1 class="brand">' + (pil ? 'Slow Five <span>· Pilgrim</span>' : 'Slow Five') + '</h1>' +
-      '<div class="dateline"><span>' + esc(fmtDate(ed.date)) + '</span><span>' + count + ' · ' + stories.reduce((a,s)=>a+readMins(s),0) + ' min</span></div>' +
+      '<h1 class="brand">' + (pil ? 'Newsroom <span>· Pilgrim</span>' : 'Newsroom') + '</h1>' +
+      '<div class="dateline"><span>' + esc(fmtDate(ed.date)) + '</span><span>' + count + ' · ' + stories.reduce((a,s)=>a+readMins(s),0) + ' min' + leftNote(ed) + '</span></div>' +
       '</header>';
   }
 
@@ -218,16 +258,24 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       const k = storyKey(ed,i), isRead = readSet.has(k);
       return '<li class="item' + (isRead?' is-read':'') + '"><button data-open="' + i + '">' +
         '<span class="num">' + (i+1) + '</span>' +
-        '<span class="cat"><span class="tag' + (s.category==='Theology'?' theo':'') + '">' + esc(s.category) + '</span><span>' + esc(s.source?.outlet || 'Essay') + ' · ' + readMins(s) + ' min</span>' + (isRead ? '<span class="read-mark">✓ Read</span>' : '') + '</span>' +
+        '<span class="cat"><span class="tag' + (s.category==='Theology'?' theo':'') + '">' + esc(s.category) + '</span><span>' + esc(s.source?.outlet || 'Essay') + ' · ' + readMins(s) + ' min</span>' + (isRead ? '<span class="read-mark">✓ Read</span>' : posMap[k] ? '<span class="read-mark">▸ ' + posMap[k].m + ' min left</span>' : '') + '</span>' +
         '<h3>' + esc(s.headline) + '</h3>' +
         '<p class="dek">' + esc(s.dek) + '</p>' +
       '</button></li>';
     }).join('');
+    const stl = editionStories(ed);
+    let cont = null;
+    stl.forEach((s,i) => { const k = storyKey(ed,i), p = posMap[k]; if(p && !readSet.has(k) && (!cont || p.t > cont.p.t)) cont = {i, p}; });
+    const allRead = stl.every((_,i) => readSet.has(storyKey(ed,i)));
     app.innerHTML = masthead(ed) +
       '<p class="intro">' + esc(ed.intro) + '</p>' +
+      (cont ? '<button class="cta resume-cta" id="resume-btn">Continue story ' + (cont.i+1) + ' · ' + cont.p.m + ' min left →</button>' : '') +
       '<ol class="list">' + items + '</ol>' +
+      (allRead ? '<div class="list-end"><button class="cta" id="close-btn">Close the edition →</button></div>' : '') +
       (dbStatus==='offline' ? '<p class="note">Offline: showing your saved copy. New editions appear when you reconnect.</p>' : '');
     app.querySelectorAll('[data-open]').forEach(b => b.addEventListener('click', () => openStory(ed.date, +b.dataset.open)));
+    const rb = document.getElementById('resume-btn'); if(rb) rb.onclick = () => openStory(ed.date, cont.i);
+    const cb = document.getElementById('close-btn'); if(cb) cb.onclick = () => { state = {view:'close', ed:ed.date, story:null}; render(); };
     window.scrollTo(0,0);
   }
 
@@ -236,14 +284,15 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   function renderStory(ed, i){
     const stories = editionStories(ed);
     const s = stories[i]; if(!s){ state.view='today'; return render(); }
-    markRead(storyKey(ed,i));
+    const key = storyKey(ed,i);
     setHash('e' + ed.date + '_' + (i+1));
     const src = s.source || {};
     const isRecall = i === ed.stories.length;
     const next = stories[i+1];
-    const nextLabel = !next ? 'Back to edition' : next.category==='Recall' ? 'Next: Recall →' : 'Next story →';
+    const nextLabel = !next ? 'Close the edition →' : next.category==='Recall' ? 'Next: Recall →' : 'Next story →';
     app.innerHTML =
-      '<button class="back" id="back-btn">← No. ' + esc(String(ed.number).padStart(3,'0')) + ' · ' + esc(fmtDate(ed.date)) + '</button>' +
+      '<div class="readbar"><div class="readbar-in"><button class="back" id="back-btn">← No. ' + esc(String(ed.number).padStart(3,'0')) + '</button>' +
+        '<span class="left" aria-live="off"><span id="left-note"></span><button id="start-over" hidden>Start over</button></span></div></div>' +
       '<article>' +
         '<header class="art-head">' +
           '<div class="cat"><span class="tag' + (s.category==='Theology'?' theo':'') + '">' + esc(s.category) + '</span><span>' + (i+1) + ' of ' + stories.length + ' · ' + esc(s.kicker||'') + '</span></div>' +
@@ -253,10 +302,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
             (isRecall ? 'Essay' : (ed.mix === 'pilgrim' ? 'Key source: ' : 'Digest of ') + esc(src.author||'') + ', <i>' + esc(src.outlet||'') + '</i>') +
             ' · ' + readMins(s) + ' min read</div>' +
         '</header>' +
-        '<div class="body">' + (s.body||[]).map(p => p.startsWith('## ') ? '<h2 class="sub">' + esc(p.slice(3)) + '</h2>' : '<p>' + esc(p) + '</p>').join('') + '</div>' +
-        (s.counterpoint ? '<section class="box"><h4>Strongest counterpoint</h4><p>' + esc(s.counterpoint) + '</p></section>' : '') +
-        (s.why ? '<section class="box why"><h4>Why it matters</h4><p>' + esc(s.why) + '</p></section>' : '') +
-        ((s.questions||[]).length ? '<section class="box qs"><h4>' + (isRecall ? 'Recall prompt' : 'Questions to sit with') + '</h4><ol>' + s.questions.map(q => '<li>' + esc(q) + '</li>').join('') + '</ol></section>' : '') +
+        '<div class="body">' + (s.body||[]).map(p => p.startsWith('## ') ? '<h2 class="sub" data-w="' + wc(p.slice(3)) + '">' + esc(p.slice(3)) + '</h2>' : '<p data-w="' + wc(p) + '">' + esc(p) + '</p>').join('') + '</div>' +
+        (s.counterpoint ? '<section class="box" data-w="' + wc(s.counterpoint) + '"><h4>Strongest counterpoint</h4><p>' + esc(s.counterpoint) + '</p></section>' : '') +
+        (s.why ? '<section class="box why" data-w="' + wc(s.why) + '"><h4>Why it matters</h4><p>' + esc(s.why) + '</p></section>' : '') +
+        ((s.questions||[]).length ? '<section class="box qs" data-w="' + wc(s.questions.join(' ')) + '"><h4>' + (isRecall ? 'Recall prompt' : 'Questions to sit with') + '</h4><ol>' + s.questions.map(q => '<li>' + esc(q) + '</li>').join('') + '</ol></section>' : '') +
         (isRecall
           ? (Array.isArray(s.sources) && s.sources.length
             ? '<footer class="src"><div class="m">Sources</div>' + s.sources.map(source => '<div>' + esc(source) + '</div>').join('') + '</footer>'
@@ -274,7 +323,158 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       '</div>';
     document.getElementById('back-btn').onclick = () => { state = {view:'today', ed:ed.date, story:null}; render(); };
     document.getElementById('prev-btn').onclick = () => { if(i>0) openStory(ed.date, i-1); };
-    document.getElementById('next-btn').onclick = () => { if(next) openStory(ed.date, i+1); else { state={view:'today', ed:ed.date, story:null}; render(); } };
+    document.getElementById('next-btn').onclick = () => { if(next) openStory(ed.date, i+1); else { state={view:'close', ed:ed.date, story:null}; render(); } };
+    teardown = startReader(key);
+  }
+
+  // ---- Resume exactly: remember the place in each story, page by screenful, count minutes left ----
+  function startReader(key){
+    const art = app.querySelector('article'), bar = app.querySelector('.readbar'), navEl = document.querySelector('.nav');
+    const note = document.getElementById('left-note'), over = document.getElementById('start-over');
+    const blocks = [...art.querySelectorAll(':scope > header, :scope > section, :scope > footer, .body > *')];
+    const barB = () => bar.getBoundingClientRect().bottom;
+    const edge = () => navEl.getBoundingClientRect().top;
+    const finished = () => blocks[blocks.length - 1].getBoundingClientRect().bottom <= edge() + 2;
+    function leftMins(){
+      const e = edge(); let w = 0;
+      for(const b of blocks){
+        const n = +b.dataset.w; if(!n) continue;
+        const r = b.getBoundingClientRect();
+        if(r.top >= e) w += n; else if(r.bottom > e) w += n * (r.bottom - e) / Math.max(r.height, 1);
+      }
+      return Math.ceil(w / 230);
+    }
+    function snapshot(){
+      const top = barB() + 2;
+      for(let b = 0; b < blocks.length; b++){
+        const r = blocks[b].getBoundingClientRect();
+        if(r.bottom > top) return {b, f: Math.min(1, Math.max(0, (top - r.top) / Math.max(r.height, 1)))};
+      }
+      return {b: blocks.length - 1, f: 1};
+    }
+    function placeAt(p){
+      const el = blocks[Math.min(p.b, blocks.length - 1)]; if(!el) return;
+      const r = el.getBoundingClientRect();
+      window.scrollTo(0, Math.max(0, window.scrollY + r.top + p.f * r.height - (barB() + 2)));
+    }
+    const rec = !readSet.has(key) && posMap[key] ? posMap[key] : null;
+    let resumed = !!rec, restoreY = 0, timer = null;
+    function settle(){
+      if(!document.body.contains(art)) return;
+      if(finished()){
+        if(!readSet.has(key)) markRead(key);
+        if(posMap[key]) savePos(key, null);
+        note.textContent = 'End of story'; resumed = false; if(over) over.hidden = true;
+        return;
+      }
+      if(resumed && Math.abs(window.scrollY - restoreY) > 60){ resumed = false; if(over) over.hidden = true; }
+      const m = leftMins();
+      note.textContent = (resumed ? 'Resumed · ' : '') + m + ' min left';
+      if(!readSet.has(key)){
+        const sn = snapshot();
+        if(sn.b === 0 && sn.f < .02){ if(posMap[key]) savePos(key, null); }
+        else savePos(key, {b: sn.b, f: sn.f, m, t: Date.now()});
+      }
+    }
+    function turn(dir){
+      if(dir > 0 && finished()){ const nb = document.getElementById('next-btn'); if(nb) nb.click(); return; }
+      const lh = parseFloat(getComputedStyle(document.body).fontSize) * 1.6;
+      window.scrollBy(0, dir * Math.max(120, edge() - barB() - lh));   // one screenful, one line of overlap, no animation
+    }
+    const onScroll = () => { clearTimeout(timer); timer = setTimeout(settle, 250); };
+    const onTap = e => {
+      if(!prefs.tap) return;
+      if(e.target.closest('a,button,.nav,.readbar,.pager,input,select,textarea')) return;
+      if(window.getSelection && String(window.getSelection())) return;
+      const x = e.clientX / window.innerWidth;
+      if(x > .6) turn(1); else if(x < .3) turn(-1);
+    };
+    const onKey = e => {
+      if(e.altKey || e.ctrlKey || e.metaKey || /^(INPUT|TEXTAREA|SELECT)$/.test((e.target||{}).tagName||'')) return;
+      if(e.key === 'ArrowRight' || e.key === 'PageDown'){ e.preventDefault(); turn(1); }
+      else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); turn(-1); }
+    };
+    const onHide = () => { if(document.visibilityState === 'hidden') settle(); };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    document.addEventListener('keydown', onKey);
+    document.addEventListener('visibilitychange', onHide);
+    app.addEventListener('click', onTap);
+    if(over) over.onclick = () => { savePos(key, null); resumed = false; over.hidden = true; window.scrollTo(0, 0); settle(); };
+    if(rec){
+      const restore = () => { placeAt(rec); restoreY = window.scrollY; settle(); };
+      if(over) over.hidden = false;
+      requestAnimationFrame(restore);
+      const redo = () => { if(resumed && Math.abs(window.scrollY - restoreY) < 3) restore(); };   // fonts can reflow the page after first paint
+      if(document.fonts && document.fonts.ready) document.fonts.ready.then(redo);
+      setTimeout(redo, 1200);
+    } else { window.scrollTo(0, 0); settle(); }
+    return function(){
+      clearTimeout(timer); settle();
+      window.removeEventListener('scroll', onScroll);
+      document.removeEventListener('keydown', onKey);
+      document.removeEventListener('visibilitychange', onHide);
+      app.removeEventListener('click', onTap);
+    };
+  }
+
+  // ---- The Close: a quiet end to the edition ----
+  const WIB = 7 * 3600e3;
+  function slotAfter(ms){   // next Monday or Thursday 06:00 WIB strictly after ms
+    const b = new Date(ms + WIB);
+    for(let d = 0; d < 9; d++){
+      const t = Date.UTC(b.getUTCFullYear(), b.getUTCMonth(), b.getUTCDate() + d, 6) - WIB;
+      const wd = new Date(t + WIB).getUTCDay();
+      if((wd === 1 || wd === 4) && t > ms) return t;
+    }
+    return ms;
+  }
+  function nextEdition(ed){
+    const [y,m,d] = ed.date.split('-').map(Number);
+    if(ed.mix === 'pilgrim' && ed.pilgrimDay && ed.pilgrimDay < 23)
+      return {t: Date.UTC(y, m-1, d+1, 6) - WIB, label: 'Holy Land Day ' + (ed.pilgrimDay+1) + ' of 23'};
+    const reg = editions.find(e => e.mix === 'theology' || e.mix === 'longform');
+    return {t: slotAfter(Date.now()), label: reg ? (reg.mix === 'theology' ? 'A long-form edition' : 'A theology edition') : ''};
+  }
+  function whenParts(t){
+    const h = (t - Date.now()) / 3600e3;
+    const day = new Date(t).toLocaleDateString('en-GB', {weekday:'long', day:'numeric', month:'long', timeZone:'Asia/Jakarta'});
+    let rel;
+    if(h <= 0) rel = 'due now'; else if(h < 1) rel = 'in under an hour'; else if(h < 24) rel = 'in ' + Math.round(h) + ' hours';
+    else { const n = Math.round(h / 24); rel = 'in ' + n + ' day' + (n === 1 ? '' : 's'); }
+    const local = new Date().getTimezoneOffset() === -420 ? '' : ' · ' + new Date(t).toLocaleString('en-GB', {weekday:'short', hour:'2-digit', minute:'2-digit'}).replace(',', '') + ' your time';
+    return {day, rel, local, due: h <= 0};
+  }
+  function renderClose(ed){
+    setHash('e' + ed.date + '_close');
+    const st = editionStories(ed), n = st.length;
+    const doneN = st.filter((_,i) => readSet.has(storyKey(ed,i))).length;
+    const mins = st.reduce((a,s) => a + readMins(s), 0);
+    const isLatest = editions[0] && ed.date === editions[0].date;
+    const pil = ed.mix === 'pilgrim';
+    const words = ['Zero','One','Two','Three','Four','Five','Six','Seven'];
+    const pad = String(ed.number).padStart(3,'0');
+    let head, line;
+    if(doneN === n){
+      head = pil && ed.pilgrimDay ? 'Day ' + ed.pilgrimDay + ' is read.' : (words[n] || n) + ' read. That is enough.';
+      line = pil ? 'Nothing more today. Put it down.' : 'There is nothing more in this edition. Put it down.';
+    } else { head = doneN + ' of ' + n + ' read.'; line = 'The rest will keep.'; }
+    let next;
+    if(isLatest){
+      const nx = nextEdition(ed), w = whenParts(nx.t);
+      const sub = [w.due ? 'reload to check' : w.rel, nx.label].filter(Boolean).join(' · ') + (w.due ? '' : w.local);
+      next = '<section class="next"><div class="m">Next edition</div><div class="when">' + esc(w.due ? 'Due now' : w.day + ', 06:00 WIB') + '</div><div class="m">' + esc(sub) + '</div></section>';
+    } else {
+      next = '<section class="next"><div class="m">Back issue</div><div class="when">A newer edition is waiting.</div></section>';
+    }
+    app.innerHTML = '<div class="close">' +
+      '<h1>' + esc(head) + '</h1><p class="line">' + esc(line) + '</p>' +
+      '<div class="stamp"><div>No. ' + pad + '</div><div>' + esc(fmtDate(ed.date)) + '</div><div>' + (n > ed.stories.length ? n + ' pieces' : n + ' stories') + ' · ' + mins + ' min</div><div class="st">' + (doneN === n ? 'Closed' : 'Left open') + '</div></div>' +
+      next +
+      '<div class="actions"><button class="cta" id="x-ed">Back to the edition</button>' + (isLatest ? '' : '<button class="cta" id="x-latest">Latest edition</button>') + '<button class="cta" id="x-arch">Archive</button></div>' +
+      '</div>';
+    document.getElementById('x-ed').onclick = () => { state = {view:'today', ed:ed.date, story:null}; render(); };
+    const xl = document.getElementById('x-latest'); if(xl) xl.onclick = () => { state = {view:'today', ed:null, story:null}; render(); };
+    document.getElementById('x-arch').onclick = () => { state = {view:'archive', ed:null, story:null}; render(); };
     window.scrollTo(0,0);
   }
 
@@ -298,7 +498,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     setHash('about');
     const sizes = [16,18,20,22];
     app.innerHTML = '<div class="about">' +
-      '<h2 class="sec-title">About Newsroom Slow Five</h2>' +
+      '<h2 class="sec-title">About Newsroom</h2>' +
       '<p>Five long reads, digested, twice a week. Each story is a 5–6 minute synthesis (about 1,200–1,400 words) of one serious piece: the argument and its evidence, the strongest counterpoint, why it matters, and questions to sit with. Then a link to the original, if you want the full meal. Recall is a five-minute essay that revisits ideas from books and podcasts.</p>' +
       '<h3>Schedule</h3><p>New editions every Monday and Thursday at 06:00 Jakarta time.</p>' +
       '<h3>Editorial mix</h3>' +
@@ -312,11 +512,17 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       '<ul class="srcs"><li>Long-form: Aeon, Asterisk, Asimov Press, Lawfare, Nature and Science features, FT Big Read</li><li>Primary research: arXiv, NBER, SSRN papers and lab research posts</li><li>Theology: Themelios, JETS, First Things, Mere Orthodoxy, Christianity Today, TGC essays, new monographs</li></ul>' +
       '<h3>Text size</h3>' +
       '<div class="settings">' + sizes.map(z => '<button id="size-' + z + '" data-size="' + z + '" aria-pressed="' + (prefs.size===z) + '">' + (z===16?'Small':z===18?'Default':z===20?'Large':'X-Large') + '</button>').join('') + '</div>' +
-      '<p class="note">Built for e-ink: no animation, high contrast, large tap targets. Your read marks and text size stay on this device. Add to Home Screen to install.</p>' +
+      '<h3>Page turning</h3>' +
+      '<div class="settings"><button data-tap="1" aria-pressed="' + (prefs.tap !== false) + '">Tap screen edges</button><button data-tap="0" aria-pressed="' + (prefs.tap === false) + '">Scroll only</button></div>' +
+      '<p class="note">Tap the right edge for the next page, the left edge for the previous one. Arrow keys and Page Up/Down work too.</p>' +
+      '<p class="note">Built for e-ink: no animation, high contrast, large tap targets. Your read marks, your place in each story and your settings stay on this device. Add to Home Screen to install.</p>' +
       '</div>';
     app.querySelectorAll('[data-size]').forEach(b => b.addEventListener('click', () => {
       prefs.size = +b.dataset.size; store.set(PREF_KEY, prefs);
       document.documentElement.style.setProperty('--fs', prefs.size + 'px'); renderAbout();
+    }));
+    app.querySelectorAll('[data-tap]').forEach(b => b.addEventListener('click', () => {
+      prefs.tap = b.dataset.tap === '1'; store.set(PREF_KEY, prefs); renderAbout();
     }));
     window.scrollTo(0,0);
   }
@@ -331,8 +537,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   function applyHash(){
     const h = (location.hash||'').slice(1);
     if(h==='archive' || h==='about'){ state = {view:h, ed:null, story:null}; return; }
-    const m = h.match(/^e(\d{4}-\d{2}-\d{2})(?:_(\d))?$/);
-    if(m){ state = m[2] ? {view:'story', ed:m[1], story:+m[2]-1} : {view:'today', ed:m[1], story:null}; }
+    const m = h.match(/^e(\d{4}-\d{2}-\d{2})(?:_(\d|close))?$/);
+    if(m){ state = m[2] === 'close' ? {view:'close', ed:m[1], story:null} : m[2] ? {view:'story', ed:m[1], story:+m[2]-1} : {view:'today', ed:m[1], story:null}; }
   }
   applyHash();
   render();
@@ -349,8 +555,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       const changed = JSON.stringify(list) !== JSON.stringify(editions);
       editions = list; store.set(CACHE_KEY, list.slice(0,40)); dbStatus = 'live';
       if(state.ed && !findEd(state.ed)) state = {view:'today', ed:null, story:null};
-      render();
-    }catch(e){ dbStatus = 'offline'; render(); }
+      if(changed || state.view !== 'story') render();   // never yank a story the reader is in the middle of
+    }catch(e){ dbStatus = 'offline'; if(state.view !== 'story') render(); }
   })();
 })();
 </script>

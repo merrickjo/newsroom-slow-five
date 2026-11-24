@@ -1,6 +1,6 @@
 {
-  "name": "Newsroom Slow Five",
-  "short_name": "Slow Five",
+  "name": "Newsroom",
+  "short_name": "Newsroom",
   "description": "Five slow-journalism long reads, digested twice a week.",
   "start_url": "./",
   "scope": "./",
