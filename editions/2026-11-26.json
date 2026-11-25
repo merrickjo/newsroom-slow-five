@@ -1,0 +1,205 @@
+{
+ "number": 20,
+ "date": "2026-11-26",
+ "weekday": "Thursday",
+ "mix": "pilgrim",
+ "pilgrimDay": 3,
+ "special": false,
+ "intro": "Day three of twenty-three: Giza, the papyrus workshop and the perfume showroom. A boatman's logbook, a lost Nile branch and Paul's parade of incense and ink turn a tourist morning into a study of empire and kingdom.",
+ "stories": [
+  {
+   "category": "Geography",
+   "kicker": "Stone and water",
+   "headline": "A pyramid field built beside a vanished river",
+   "dek": "The Giza plateau is a limestone shelf whose fine casing came from the same ridge the group climbs that afternoon, and two recent studies put a lost Nile branch at its foot.",
+   "body": [
+    "The Giza note gives the monument's dimensions, the plateau's height above the floodplain and the walk from the Sphinx to the Great Pyramid, so none of that is repeated here. Today's question is a different one: why here? Why did Khufu's builders choose a desert shelf on the west bank, eight kilometres or more from where the Nile runs today, and how did millions of tonnes of stone arrive at it?",
+    "Two answers have sharpened since 2022. One concerns the rock under the group's feet; the other concerns water that is no longer there. Both turn the plateau from a postcard into a working landscape, and both connect the morning at Giza with the afternoon on the Mokattam ridge.",
+    "## A shelf of old sea floor",
+    "The plateau is limestone laid down on a sea floor in the Middle Eocene, tens of millions of years before any pharaoh. Geologists assign it to the same Mokattam Formation that forms the cliffs east of Cairo, where the Cave Church is carved (geological attribution from standard surveys of the plateau; treat the exact member names as detail for the guide). The builders quarried the core blocks a few hundred metres from the pyramids; the quarry hollows south of Khufu's pyramid and around the Sphinx are part of what the group sees. The Sphinx itself is the stump left standing in one of those quarries.",
+    "The bright white outer casing was different stone. It came from Tura, on the east bank, at the southern end of the same ridge system. That matters for the day's shape: in the morning the group stands under the remains of a royal casing cut from the eastern hills; in the afternoon it worships inside a hill of that same rock, carved out by and for some of the poorest Christians in Cairo. The geology joins what the theology contrasts.",
+    "## The river that was there",
+    "The Nile did not always keep to its present channel. In 2022 a team led by the physical geographer Hader Sheisha published pollen and sediment cores, drilled to nearly nine metres under modern Giza, that trace a now-dry arm of the river called the Khufu branch (PNAS; reported by Eos, 6 October 2022). Their reconstruction suggests that while the pyramids were rising the branch held water at roughly 40 per cent of its earlier, wetter peak: enough for boats to reach the foot of the plateau. Levels fell around the end of the Fourth Dynasty. One outside specialist, Mark Macklin, called the study speculative, so treat the exact water levels as a model, not a measurement.",
+    "A second study widened the picture. In 2024 Eman Ghoneim and colleagues, using radar satellite imagery, ground-penetrating radar and two deep sediment cores, mapped a buried channel they named the Ahramat branch, about 64 kilometres long and 200 to 700 metres wide, running 2.5 to 10 kilometres west of the modern Nile (Communications Earth & Environment 5:233). It borders 31 pyramids built between the Third and Thirteenth Dynasties. The authors offer several reasons it dried up, including the river migrating east, windblown sand and an increasingly arid climate, and they say it lost most of its water by the New Kingdom. In other words, the pyramid line looks strangely desert-bound today because the river moved away from it, not because the builders ignored the river.",
+    "## Late December on the plateau",
+    "Weather Spark's long-run averages for Cairo put late-December highs near 19–20°C and lows near 11°C, with about a three per cent chance of rain on any given day. Sunrise on 21 December is around 06:46 and sunset just before 17:00. Practically, that means a cold start on an exposed plateau with no shade and little wind cover, a pleasant late morning, and very short usable daylight for a day that must still include Mokattam, two shops and a long road east. Low winter sun from the south also means the Great Pyramid's north face sits in shadow most of the day; photographs of the faces work best from the south and east.",
+    "## What to look for, and where to stand",
+    "First, at the top of Khafre's pyramid, look for the cap of smooth stone: it is the largest surviving patch of original casing on the plateau and shows what all three once looked like. Point out that what the group sees elsewhere is core masonry, and that the casing was largely stripped in later centuries for building stone. Second, on Khufu's north face, look above the original entrance for the large paired gabled blocks; the muon-scan corridor discussed in the History part lies just behind them. Third, from the panoramic viewpoint on the desert side, look east across the three main pyramids to the Cairo skyline and, on a clear morning, the line of the Mokattam hills: that is where the casing came from and where the group is going. Fourth, around the Sphinx, look at the horizontal bands in its body and enclosure walls: harder and softer beds of the same old sea floor, weathering at different rates. Fifth, look at the edge of the plateau where green fields or city meet sand: the former waterline the 2022 and 2024 studies describe ran on that side.",
+    "Stand the group for the panorama with the sun behind them, which in late-December mornings means facing roughly north-east. For the Sphinx, the standard viewing terrace in front of the Valley Temple gives the face at eye level and is the best place to talk."
+   ],
+   "why": "Pilgrims tend to see the pyramids as an isolated wonder. Seeing them as stone cut from the Mokattam ridge and floated on a vanished river arm makes the empire concrete and prepares the afternoon at the Cave Church, where the same rock serves a very different kingdom. For the pastor, the geography gives a physical bridge between morning and afternoon that does not have to be forced.",
+   "questions": [
+    "What does it change to know the casing stone and the Cave Church come from the same ridge?",
+    "Why do you think the pyramid builders chose the desert edge rather than the riverbank itself?",
+    "Where in your own life is the river that once supplied your work now running somewhere else?"
+   ],
+   "source": {
+    "outlet": "Communications Earth & Environment",
+    "title": "The Egyptian pyramid chain was built along the now abandoned Ahramat Nile Branch",
+    "author": "Eman Ghoneim et al.",
+    "url": "https://www.nature.com/articles/s43247-024-01379-7",
+    "published": "2024",
+    "readMins": 30
+   }
+  },
+  {
+   "category": "History",
+   "kicker": "Paperwork and pilgrims",
+   "headline": "The pyramid's logbooks, and the pilgrims who misread it",
+   "dek": "The oldest inscribed papyri ever found record the shipping of Giza's casing, and for a thousand years Christian pilgrims called the pyramids Joseph's granaries.",
+   "body": [
+    "The Giza note covers the workers' village, the labour system and the Greek and early Christian readings of Egypt. Three layers are missing from it, and each has changed since the note was written: a set of papyri written by men who worked on the Great Pyramid, a physics experiment that is still finding empty spaces inside it, and a long Christian tradition that confidently identified the pyramids with a biblical story and was wrong.",
+    "Together they make a good case study for the rest of the trip. Some evidence about a site is contemporary and documentary. Some is new and technical. And some is pious tradition that tells you more about the pilgrims than about the place.",
+    "## A boatman's logbook",
+    "In March 2013 a French mission led by Pierre Tallet and Gregory Marouard, excavating at Wadi al-Jarf on Egypt's Red Sea coast, found papyrus fragments in front of boat-storage galleries cut into the rock. Within a month they had more than a thousand fragments (LRB review of Tallet and Lehner, The Red Sea Scrolls, 2023). They are the oldest inscribed papyri known. The best preserved, now called the Diary of Merer, is the logbook of an inspector who led a team of boatmen in a late year of Khufu's reign; sources disagree whether the key entries belong to the 26th or 27th year, and absolute dates differ between chronologies.",
+    "Merer's diary records, day by day, trips carrying white limestone from the Tura quarries across the river to Giza, which the text calls Akhet-Khufu, the Horizon of Khufu. Wikipedia's summary of Tallet's edition gives roughly thirty blocks of two to three tonnes per trip and some two hundred a month. The team reported to Ankhhaf, known from other sources as Khufu's half-brother, who appears here as the official in charge of the harbour basin near Giza. Sources disagree on the size of Merer's crew: the LRB review and Wikipedia give about forty, a Smithsonian feature gives some two hundred. The smaller figure seems to be Merer's own team, the larger a wider workforce; present it that way.",
+    "Why did papers about Giza end up on the Red Sea? The working hypothesis of Tallet and Mark Lehner is that the team was reassigned to a mining expedition after the pyramid work and left its archive at the port, but the LRB reviewer rightly notes that this cannot be known for certain. Parts of the papyri have been exhibited in Cairo; where they are on display in December 2026 is unverified.",
+    "## Scanning with cosmic rays",
+    "The pyramid is still being explored without a shovel. The ScanPyramids project uses muons, particles produced when cosmic rays hit the atmosphere, which pass through stone and are partly absorbed by it. In November 2017 the team announced in Nature a large void above the Grand Gallery, at least 30 metres long. In March 2023 a paper in Nature Communications characterised a corridor-shaped space behind the chevron blocks on the north face. Neither is a hidden treasure chamber; most specialists read them as construction features, such as relieving spaces. But they show that the most-visited monument in the world still holds unanswered questions, and that the best recent work is cautious about what its data mean.",
+    "## Joseph's granaries",
+    "For pilgrims of late antiquity and the Middle Ages, the pyramids had a biblical identity. A passage attributed to Egeria, in the 380s, speaks of many pyramids that Joseph built to store grain; the geographer Julius Honorius, perhaps as early as 376, calls them horrea Ioseph, Joseph's granaries (Wikipedia, Joseph's granaries, which assembles the sources). The idea runs through the Piacenza pilgrim around 570, Gregory of Tours, the Irish scholar Dicuil and Benjamin of Tudela. In the thirteenth century, mosaicists in the north narthex of San Marco in Venice showed Joseph standing in front of pyramid-shaped granaries.",
+    "It was never unanimous. When the caliph al-Ma'mun's expedition visited Giza in 832, the Syriac patriarch Dionysius of Tell Mahre dismissed the granary story. William of Boldensele argued against it in 1336; twenty years later Mandeville's Travels repeated it anyway. The Renaissance traveller Cyriacus of Ancona revived the older Greek view that the pyramids were royal tombs.",
+    "## What the tradition teaches",
+    "The granary tradition is a useful warning for a pilgrim group. It grew from a sincere desire to find the Bible on the ground: Genesis 41 has Joseph storing grain in Egypt's cities, the pyramids were the biggest things in Egypt, and the two were joined. It was attractive, plausible to people without archaeology, and wrong. Merrick can hold it up on the plateau as the honest opposite of what this trip is trying to do: the aim is not to make every stone illustrate a verse, but to let the stones be what they are and let the text speak for itself."
+   ],
+   "why": "Merer's logbook makes the empire human: it ran on rosters, boats and paperwork, not magic. The granaries story gives the pastor a gentle, memorable way to set the authenticity tone for the whole pilgrimage, on a site where no one in the group has a stake in the tradition.",
+   "questions": [
+    "What do you feel, knowing that the oldest written papyri are shipping logs rather than prayers or poems?",
+    "Why were Christian pilgrims so ready to see Joseph in the pyramids, and where might we be doing the same on this trip?",
+    "How should we speak about a tradition that is beloved but almost certainly mistaken?"
+   ],
+   "source": {
+    "outlet": "London Review of Books",
+    "title": "In Gold and Lapis Lazuli (review of Tallet and Lehner, The Red Sea Scrolls)",
+    "author": "Robert Cioffi",
+    "url": "https://www.lrb.co.uk/the-paper/v47/n08/robert-cioffi/in-gold-and-lapis-lazuli",
+    "published": "2025",
+    "readMins": 15
+   }
+  },
+  {
+   "category": "Culture",
+   "kicker": "Scent and sheet",
+   "headline": "Perfume, paper and the price of a welcome",
+   "dek": "Egypt sold the ancient world its perfume and its writing material, and the group's two shop stops sit inside a living economy that deserves honesty both ways.",
+   "body": [
+    "The itinerary's papyrus and perfume stops are easy to dismiss as tourist shopping. They are better read as the two Egyptian exports that most shaped the Bible's world: the scented oils that anointed priests, guests and the dead, and the sheets on which Scripture travelled. They also put the group in direct, commercial contact with Egyptians whose livelihoods depend on visitors, which is where courtesy is tested.",
+    "This part takes the world of the text first, then the people the group will meet.",
+    "## The perfume of the Delta",
+    "In the Graeco-Roman world the most famous Egyptian scent was the Mendesian, named after the Delta city of Mendes. Excavations by the University of Hawai'i at nearby Thmuis (Tell Timai), led by Robert Littman and Jay Silverstein, uncovered what they identify as a perfume-production area about 2,300 years old, with residues in amphorae (UH News, 2019; The Past, 2022). With the researchers Dora Goldsmith and Sean Coughlin they reconstructed the recipe from ancient texts: freshly ground myrrh and cinnamon, cassia, a resin, and oil of balanos, which may be moringa or the desert date. The result was published in Near Eastern Archaeology and shown in the Queens of Egypt exhibition in Washington.",
+    "Set that ingredient list beside Exodus 30:23–25, where the holy anointing oil is myrrh, sweet cinnamon, aromatic cane, cassia and olive oil, compounded by the perfumer's art. Israel's sanctuary used the same luxury aromatics as Egypt's elite, then forbade copying the formula for private use (30:32–33). Holiness did not mean a different smell; it meant the smell belonged to God. The Joseph story begins with the same trade: Joseph is sold to a caravan carrying gum, balm and myrrh down to Egypt (Gen 37:25). And in the gospels, Mary's pure nard is valued at more than three hundred denarii, close to a year's wages for a day labourer (Mark 14:5; John 12:3–5).",
+    "## The plant that gave the Bible its name",
+    "Papyrus was Egypt's other great export. Greek byblos, a word for papyrus and the Phoenician port through which it was traded, gave biblion, book, and so our word Bible. Under the Ptolemies papyrus production was a royal monopoly, and Pliny the Elder (Natural History 13) describes how strips of pith were laid crosswise, pressed and dried.",
+    "By the twentieth century the plant had died out in Egypt's wild. Its return is the work of one man. Hassan Ragab, an engineer and diplomat born in Helwan in 1911, began experiments in 1962, re-imported the plant from Sudan, produced his first sheet in July 1966 and founded his Papyrus Institute on a Nile houseboat in 1967 (AIP memorial by Alia Hanafi, 2004). A 1973 Aramco World report found him still pressing sheets in bathtubs, having consulted Theophrastus, Herodotus and Pliny and found them wrong on several counts. Much of what the group will be shown, the peeling, slicing, soaking and crosswise laying, is Ragab's reconstruction. That is worth saying aloud: it is a revival, honest and skilful, not an unbroken tradition.",
+    "## Who the group will meet",
+    "At the foot of the plateau is Nazlet el-Samman, a village whose families have worked with horses, camels and visitors for generations. Since April 2025 the plateau's new management has moved animal handlers into a designated zone, introduced electric shuttles and barred tour buses from crossing the site (Ahram Online, 2025; Euronews, April 2025). Ahram reported a backlash from local workers, and a Smithsonian feature quotes a carriage owner describing heavy fines. The changes are good for visitors and for animal welfare; they also cost some families income. Pilgrims will meet that tension in the form of persistent offers.",
+    "The papyrus and perfume showrooms are usually Egyptian family businesses with skilled demonstrators. It is widely reported, though not verified for this itinerary, that tour stops at such shops involve commissions; that is normal commerce, not a scandal, but it means the group should feel free not to buy.",
+    "## How to honour them",
+    "Say no early, smiling and without stopping, and say it once more if needed; that is a respectable local register, not rudeness. Never accept an object placed in your hand, a scarf on your head or a camel lead unless you intend to pay. If a demonstrator has given the group twenty minutes, thank him by name and let the group leader tip on everyone's behalf. Ask before photographing people, and do not photograph anyone at prayer. Bargain if you wish, but never with contempt; the difference of a few pounds means more to the seller than to you. Above all, do not let a group of Christians become known on the plateau for haggling harshly and leaving without a word of thanks."
+   ],
+   "why": "The two shops carry the material history of the Bible: the oil of anointing and the sheets of Scripture. Treated well, they give the pilgrim a sensory memory for texts like Exodus 30 and Mark 14, and they give the group a real chance to practise generosity and courtesy before entering the land itself.",
+   "questions": [
+    "What does it mean that the tabernacle's holy oil used the same ingredients as Egypt's luxury perfume?",
+    "How can we enjoy a demonstration without either feeling manipulated or treating people as a sales mechanism?",
+    "What would it look like for this group to leave a good reputation behind at Giza?"
+   ],
+   "source": {
+    "outlet": "The Past",
+    "title": "Recreating an ancient Egyptian perfume",
+    "author": "Amy Brunskill",
+    "url": "https://the-past.com/news/recreating-an-ancient-egyptian-perfume/",
+    "published": "2022-09-22",
+    "readMins": 4
+   }
+  },
+  {
+   "category": "Theology",
+   "kicker": "Triumph, aroma, letter",
+   "headline": "Paul's triumph smells of incense and ink",
+   "dek": "In 2 Corinthians 2:14–3:3 Paul borrows the empire's victory parade, the perfumer's scent and the papyrus letter, and turns all three against the logic of empire.",
+   "body": [
+    "Hermeneutical lens: Lexical-Semantic. The text is 2 Corinthians 2:14–3:3, read with its seam at 2:12–13 and its continuation in 3:4–6. Earlier notes treat the veil in 3:14–18 (“The Remaining Veil”) and the face-to-face glory of 3:18 (“Face to Face”), and the Babel note covers the empire impulse, Daniel's statue and the upward pyramid against the downward cross. This edition stays with four words: thriambeuō (lead in triumph), osmē/euōdia (scent, fragrance), kapēleuō (peddle) and epistolē (letter).",
+    "The day supplies the vocabulary: Giza is the empire's monument, the showroom sells scent, the Institute makes the writing material. Paul uses all three in a dozen verses.",
+    "## The seam and the parade (2:12–14)",
+    "Paul could not rest in Troas without Titus (2:12–13). Then, abruptly: “But thanks be to God, who always leads us in triumph in Christ.” Many see a break in the letter here; Christoph Heilig argues that a careful lexical reading of thriambeuō makes the turn coherent: the restless apostle is exactly the kind of person God puts on display.",
+    "What does thriambeuō mean with a personal object? Scott Hafemann (NIV Application Commentary) and Murray Harris (NIGTC) read Paul as the conquered captive led in the triumph, Hafemann adding “to death”, so God reveals himself through the apostle's suffering. George Guthrie (NTS 61, 2015) re-examines the Greek usage and stresses public display. Andreas Hock (Biblica 88, 2007) reads the apostles as participants, not captives (see the counterpoint). Heilig notes that only one imperial triumph, Claudius's in AD 44, fell in Paul's adult lifetime.",
+    "The captive-on-display reading fits the letter best. God has “exhibited us apostles last of all, like men sentenced to death” (1 Cor 4:9); Paul carries the dying of Jesus in his body (2 Cor 4:7–12); and he had been Christ's enemy (1 Cor 15:9). The former persecutor is now God's trophy. The empire's parade exalted the general by humiliating the defeated; God's parade glorifies Christ through a defeated man who has become his willing servant.",
+    "## The scent of the parade (2:14b–16a)",
+    "Roman triumphs were fragrant: Plutarch describes temples open and full of incense as Aemilius Paullus's triumph passed (Aemilius 32). Through us God spreads “the scent (osmē) of the knowledge of him everywhere”, and then a sacrificial word: “we are the aroma (euōdia) of Christ to God”. In the Septuagint osmē euōdias renders rêaḥ nîḥôaḥ, the soothing aroma of sacrifice (Gen 8:21; Lev 1:9); Paul uses it for Christ's self-giving (Eph 5:2) and the Philippians' gift (Phil 4:18).",
+    "The same scent has opposite effects: “from death to death … from life to life” (2:16), an intensive idiom. The difference lies not in the perfume but in those who smell it, as Simeon said Jesus was set for the fall and rise of many (Luke 2:34).",
+    "## Who is sufficient? (2:16b–17)",
+    "Paul asks, “Who is sufficient (hikanos) for these things?” and answers in 3:5–6: our sufficiency (hikanotēs) is from God, who made us sufficient ministers of a new covenant. The Septuagint of Exodus 4:10 has Moses at the bush saying, “I am not sufficient (ouch hikanos eimi)”. Hafemann has drawn the connection: Paul places himself in the line of Moses, a minister who knows his inadequacy. The group stands at the bush in a day's time.",
+    "In 2:17 Paul contrasts himself with “the many” who are kapēleuontes the word of God. The kapēlos was a retailer suspected of watering his wine; Septuagint Isaiah 1:22 says Jerusalem's dealers mix wine with water. The fault is dilution for profit. Paul speaks “from sincerity (eilikrineia)”.",
+    "## A letter not on papyrus (3:1–3)",
+    "Travelling teachers carried letters of recommendation (epistolai systatikai), a common papyrus genre; the IVP New Testament Commentary cites the Zenon archive, and Oxford holds a fourth-century Christian commendation from Oxyrhynchus (P.Oxy. XXXI 2603). Paul answers that the Corinthians are his letter, “written on our hearts”. Most witnesses read “our” (hēmōn); Codex Sinaiticus and a few others read “your” (hymōn), the easier and probably secondary reading.",
+    "Verse 3 piles up writing material: a letter of Christ written not with ink (melan, carbon soot in gum, applied with a reed pen) but with the Spirit of the living God, not on tablets of stone but on tablets of fleshly hearts. The stone tablets are Sinai (Exod 31:18). The fleshly heart is Ezekiel's promise of a heart of flesh and God's Spirit within (Ezek 11:19; 36:26), joined to Jeremiah's law written on the heart (Jer 31:33). The Spirit has done what scribe and lawgiver could not.",
+    "## The Christological centre",
+    "The cross itself was dressed as a triumph. Thomas Schmidt argued (NTS 41, 1995) that the purple robe, crown and mock acclamation in Mark 15:16–20 parody a Roman triumphal procession. The true general was first led in a mock triumph to his death; the apostle's procession follows his. Christ is also the sacrifice whose aroma pleases God (Eph 5:2).",
+    "## From text to practice",
+    "God acts first in each verse: he leads, spreads the scent, makes sufficient, writes by his Spirit. The pilgrim's part is to be what God has made: displayed, fragrant, undiluted, legible. In the perfume showroom, the aroma of Christ does not depend on a pleasant reception. In the papyrus shop, a genuine sheet beside a banana-leaf fake pictures Paul's refusal to water down the word. And on the bus, the pastor can rest on 3:5: his sufficiency for leading this group is from God."
+   ],
+   "counterpoint": "The strongest alternative is Andreas Hock's reading (Biblica 88, 2007): thriambeuō here does not make Paul a captive at all. Comparing 2 Corinthians 2:14 with Colossians 2:15, Hock argues the apostles take the place of the officials and soldiers who walk in the general's train, incorporated into Christ who is the parade, which suits the positive fragrance that follows. A different challenge comes from Kim Gyu-seop (2023), who reads the stone of 3:3 as a public stele bearing a commendation, not only as Moses' tablets. Both deserve a hearing; neither removes the suffering-apostle theme Paul develops in 4:7–12.",
+   "why": "This passage lets the pilgrim read the whole Egyptian day theologically: the empire's parade, the merchant's scent and the scribe's papyrus all become pictures of the gospel. For the pastor it is also a word about his own sufficiency as he leads, and about refusing to dilute the message for a tired or distracted group.",
+   "questions": [
+    "If God displays us as his former enemies now serving Christ, what changes in how we feel about our weaknesses on this trip?",
+    "Where have you seen the same gospel smell like life to one person and like death to another?",
+    "Whose life is the letter of Christ you carry, and who could read it this week?"
+   ],
+   "source": {
+    "outlet": "New Testament Studies",
+    "title": "Paul's Triumphal Procession Imagery (2 Cor 2.14–16a): Neglected Points of Background",
+    "author": "George H. Guthrie",
+    "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/pauls-triumphal-procession-imagery-2-cor-21416a-neglected-points-of-background/70F8F422854B90CD9CC1CF857863B6D8",
+    "published": "2015",
+    "readMins": 25
+   }
+  },
+  {
+   "category": "Field Brief",
+   "kicker": "Monday, 21 December",
+   "headline": "Shuttles, showrooms and a long drive after dark",
+   "dek": "Day 3 crowds Giza, the Mokattam service, two shops and a desert crossing into the shortest daylight of the year, so the brief is about the clock, the count and the money.",
+   "body": [
+    "Day 3 is the fullest day in Egypt: Giza, the Simon the Tanner service, papyrus and perfume, then the drive to Dahab, with sunset just before 17:00. Tomorrow's special edition prepares the Mokattam service; this brief covers everything around it.",
+    "The first job is to get the sequence from Panorama in writing. The second is to protect the service time from the shops.",
+    "## How the day runs",
+    "Since April 2025 coaches enter the plateau from the new gate on the Cairo–Fayoum road, where there is a visitor centre and parking, and visitors move between stations on electric shuttles included in the ticket; tour buses no longer cross the site (Ahram Online; Euronews). Plan: count at the gate, shuttle to the Great Pyramid, shuttle to the panorama, then the Sphinx and exit. Budget about three hours; walking is short but on sand and uneven stone. Elderly pilgrims can ride the shuttles between all stations; tell them so on the bus.",
+    "Opening hours need confirmation: the independent site giza-plateau.org gives 08:00–16:00 for the plateau and an earlier start for the Great Pyramid; checked 26 November 2026, unverified against the Ministry. The foreign plateau ticket is listed at EGP 700, with the Great Pyramid interior an extra EGP 1,000–1,500 and Khafre's interior EGP 280; the same site says Menkaure's interior closed in September 2026 (unverified). Confirm which tickets Panorama includes. The Great Pyramid interior is a stooped climb in a narrow, warm passage; anyone with heart, knee or breathing problems should skip it.",
+    "Toilets are at the visitor centre; use them before the shuttle. There is almost no shade or rain cover on the plateau; hats, sunglasses and water are needed even in December.",
+    "## Dress, rules and crowds",
+    "Giza has no religious dress code, but the group should dress for church that afternoon anyway: shoulders and knees covered, closed shoes. Mornings are cold, about 11°C, so layers. Climbing the pyramids is forbidden. Drones need prior permission from Egypt's civil aviation authority and can be confiscated; leave them in the hotel. Professional camera kit can require a permit under GOV.UK's advice; ordinary phones and cameras are fine.",
+    "Late December is high season; the earliest slot is the quietest, so aim to be at the gate at opening.",
+    "## Counts, safety and papers",
+    "Do the full count-off at the visitor-centre gate, at each shuttle boarding and at the final exit. Name one shuttle station as the fallback meeting point. FCDO advice (updated 27 October 2026, checked 26 November 2026) warns of scammers and touts in tourist areas; the tourist police number is 126. Most important for today: the FCDO advises not driving outside main cities and resorts at night, and the Dahab road will be driven after dark. Ask Panorama now about departure time, driver rest, checkpoints and whether the bus travels in a convoy, and press for leaving Cairo as early as possible. The same FCDO page notes that the Taba border could close at short notice because of regional tensions; Day 4's plan depends on it. The US advisory for Egypt stood at Level 2 when last reported (March 2026). Passports stay on the person: Sinai road checkpoints ask for them.",
+    "## Money and showrooms",
+    "Ticket offices take cards, not cash, per giza-plateau.org (unverified). In the showrooms, insist on a price in Egyptian pounds and, when paying by card, decline any offer to charge in your home currency. Perfume concentrates should go in hold luggage, well wrapped, because the group's flights home have cabin liquid limits. For papyrus, one buying guide suggests a bend test: real papyrus flexes without cracking, a banana-leaf imitation splits (Pyramids Land, 2026, a commercial source). No one has to buy.",
+    "Bus script: “Good morning. Today is long, so listen to three things. One: passports on your body all day, because the road to Sinai has checkpoints. Two: at Giza we move by little electric shuttles; if you get separated, go to the station I name and stay there. Three: people will offer you camel rides, photos and scarves. Smile, say la shukran, no thank you, and keep walking; do not take anything into your hands. Before we go, hear Paul: thanks be to God, who always leads us in triumph in Christ. Today we see the empire's monument; tonight we sleep by the Red Sea as God's people.”",
+    "## Handover and what goes wrong",
+    "Merrick runs the morning as TL at Giza. At the panorama he can step into the pastor role for a five-minute reading of 2 Corinthians 2:14–16 while Tesa holds the count. From arrival at Mokattam until the end of the service, Tesa takes the clock, the phone and the count. In the showrooms Tesa sets and announces the departure time.",
+    "What commonly goes wrong: shops overrun and squeeze the service or the drive (fix the leaving time before entering); a camel ride with no agreed price (agree first or refuse); a pilgrim on the wrong shuttle (count at each station); broken perfume bottles; a night drive with no water or toilet stop (ask the driver to plan stops; keep snacks at the front).",
+    "## Fun facts",
+    "1. Merer's boat bore the name “The Uraeus of Khufu Is Its Prow” (LRB, review of The Red Sea Scrolls).",
+    "2. The Red Sea harbour at Wadi al-Jarf has a stone jetty over 600 feet long, about 130 anchors and 30 gallery-caves (Smithsonian).",
+    "3. The Oxford scholar John Greaves published Pyramidographia, often called the first scientific study of the pyramids, in 1646 (Wikipedia, Joseph's granaries).",
+    "4. Hassan Ragab held the rank of general by 1943 and became ambassador to China in 1956, partly to study paper mills (AIP memorial; Aramco World 1973).",
+    "5. The only ancient source giving quantities and a method for Mendesian perfume is Paul of Aegina, a seventh-century Byzantine physician (The Past, 2022).",
+    "6. The recreated Mendesian kept its scent for at least two years (The Past, 2022).",
+    "7. In Cairo, 22 December has the shortest daylight of the year, about 10 hours 13 minutes (Weather Spark)."
+   ],
+   "why": "Day 3 fails if the morning runs over: the service shrinks, the shops overrun and the night drive grows longer. Clear counts, a fixed leaving time and an early question to Panorama about the Dahab road protect both the worship at Mokattam and the group's safety.",
+   "questions": [
+    "What time must the bus leave Mokattam for the drive to Dahab to be acceptable, and has Panorama agreed it?",
+    "Who in the group should skip the Great Pyramid interior, and how will you tell them kindly?",
+    "What will you say if a pilgrim has a dispute with a seller over a price?"
+   ],
+   "source": {
+    "outlet": "GOV.UK",
+    "title": "Egypt travel advice",
+    "author": "Foreign, Commonwealth & Development Office",
+    "url": "https://www.gov.uk/foreign-travel-advice/egypt",
+    "published": "2026-10-27",
+    "readMins": 20
+   }
+  }
+ ]
+}
