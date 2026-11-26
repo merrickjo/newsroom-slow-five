@@ -1,0 +1,221 @@
+{
+ "number": 21,
+ "date": "2026-11-27",
+ "weekday": "Friday",
+ "mix": "pilgrim",
+ "pilgrimDay": 4,
+ "special": true,
+ "intro": "Day four of twenty-three, and the first service: the Cave Church of St Simon at Mokattam, on the traditional anniversary of the moving of the mountain. A falling cliff, a typesetter's torn Bible page and Moses' song on Jesus' lips prepare a message on Matthew 17 about who stays with failing disciples.",
+ "stories": [
+  {
+   "category": "Geography",
+   "kicker": "Cliff and settlement",
+   "headline": "A cathedral cut into an unstable cliff",
+   "dek": "The Cave Church sits where Cairo's eastern escarpment meets its poorest district, and the rock that shelters the worship has also fallen on the people below.",
+   "body": [
+    "Two earlier pieces set the ground for today. The Giza edition traced the Mokattam limestone from the pyramids' casing to the Cave Church, and the Mokattam research note in the Research Corpus covers the community's migration and the capacity of the cathedral. This part does something else: it reads the escarpment as a living, and sometimes dangerous, landscape, and it tells the group what to look at once the bus stops.",
+    "The point to carry into the service is simple. The mountain in this story is not scenery. People quarry it, live under it, worship inside it and, at times, die beneath it. That is the ground on which Merrick will read a saying about mountains moving.",
+    "## Where the bus is going",
+    "Manshiyat Naser is one of the nine districts of Cairo's Western Area. It covers about 5.54 square kilometres and recorded 258,372 residents in the 2017 census, bordering Nasr City to the east, historic Cairo to the west and the Mokattam district to the south (Wikipedia, Manshiyat Naser). The garbage collectors' settlement lies at its far southern end, pressed against the foot of the Mokattam hills, and the monastery is at the top of that settlement, at the cliff face itself.",
+    "The approach is therefore a climb through a dense, working neighbourhood: narrow lanes, ground floors used as sorting rooms, trucks and handcarts loaded far above their sides. AFP's 2019 feature on the church describes the route as passing through the garbage collectors' area on uneven roads (Daily Sabah, 29 July 2019). Expect the last stretch to be slow and the bus to be the largest vehicle in the street.",
+    "## A cliff that moves",
+    "The escarpment is not inert. On the morning of 6 September 2008 eight boulders broke away from the Duweika plateau, an extension of the same Mokattam limestone at the northern edge of the hills, and fell on the settlement of Ezbet Bekhit in Manshiyat Naser. Official figures counted 119 dead and 55 injured, with at least 166 homes destroyed; the Built Environment Observatory notes that the real toll cannot be known, because the area was later levelled and only identified bodies were counted (Yahia Shawkat, Marsad Omran, 2018). A 1993 slide nearby had killed about 40 people (Wikipedia, Zabbaleen).",
+    "Why does the rock fail? The causes of 2008 were never settled. The geologist Abdallah Sorour, who had written a Ministry of Housing report in 1994 after earlier slides, pointed to the plateau's layered geology and steep, quarried cliffs; other reports blamed sewage seeping from housing on the plateau above, and residents described municipal works on the cliff edge in the months before (Marsad Omran). An internal inquiry attributed the slide to fate. In May 2010 a court jailed a deputy governor for five years; in 2014 the Court of Cassation reduced the remaining sentences to suspended terms (Wikipedia, 2008 Duweika rockslide).",
+    "For pilgrims this is not a reason to fear the visit. The monastery is a different section of the hills, and nothing found while researching this edition suggests a current hazard there. It is a reason to hear the day's text with honesty. In this neighbourhood a falling mountain is a memory, not a metaphor.",
+    "## The mountain moved by hand",
+    "The cathedral itself is the most literal moved mountain in Cairo. The monastery's own history says that work on clearing the great cave began in 1991 and removed some 140,000 tonnes of stone (samaanchurch.com). The result is an open-fronted amphitheatre under an overhang of rock, with tiers of seating descending towards the sanctuary. The monastery gives the upper St Samaan Hall about 2,000 seats and describes the rebuilt cathedral as holding a few thousand, while the Cairo Governorate and Egypt Today use the 20,000 figure for the complex as a whole. Read the large number as the whole site on a feast day, not as one room.",
+    "Under the overhang the light is soft and indirect, and in late December the cave will feel cooler than the lanes outside. The Giza edition already gave Cairo's December temperatures and the short afternoon; plan on a shaded, stone-cold seating area by mid-afternoon and tell elderly pilgrims to keep a layer on.",
+    "## What to look for, and where to stand",
+    "First, before entering, stop the group where the cliff face is visible above the plaza and let them look up. The rock walls carry large reliefs carved over more than two decades by a Polish artist, Mariusz Dybich, known locally as Mario; AFP counted about seventy works, including the moving of the mountain, St Simon holding a needle, the Crucifixion and Christ with outstretched hands (Daily Sabah; The National, 2019).",
+    "Second, look for the Arabic Scripture verses cut beside the reliefs. The monastery lists texts including Matthew 11:25, John 6:37, Psalm 50:15, Isaiah 30:15 and Matthew 16:18, and AFP noted an Isaiah 53 verse beside the Crucifixion. Ask an Arabic speaker in the group, or the guide, to read one aloud.",
+    "Third, inside the cathedral, stand at the top tier and look down to the sanctuary and up to the lip of the overhang. From there the group sees what 140,000 tonnes of removed rock looks like as space. Fourth, on the way out, look back down the slope over the roofs of the settlement towards the city: the people who built this church live in the streets the bus has just climbed.",
+    "For a group talk, the plaza in front of the cliff reliefs works better than the cathedral: the group can see the carvings while Merrick speaks, and voices do not echo off the vault."
+   ],
+   "why": "The pilgrim learns that the mountain of the day's text is a real escarpment that has fallen on the poor within living memory, which keeps the service from turning a hard place into a pleasant symbol. For the pastor, the geography supplies both the honesty and the image: a cave cleared by hand and prayer, over a district that knows what moving rock can do.",
+   "questions": [
+    "How does knowing about the 2008 rockslide change the way you hear a promise about mountains moving?",
+    "What do you notice first when you look up at the cliff reliefs, and why do you think the artist chose those scenes?",
+    "Standing at the top of the cathedral, what does the emptied space tell you about how this church was built?"
+   ],
+   "source": {
+    "outlet": "Built Environment Observatory (Marsad Omran)",
+    "title": "The Duweika Disaster Ten Years On – Part 1: Disaster and Aftermath",
+    "author": "Yahia Shawkat",
+    "url": "https://marsadomran.info/en/2018/09/1638/",
+    "published": "2018-09-07",
+    "readMins": 12
+   }
+  },
+  {
+   "category": "History",
+   "kicker": "Two foundings",
+   "headline": "A medieval miracle, a modern priest",
+   "dek": "The Cave Church rests on two stories, a tenth-century miracle whose written source is later than tradition says, and a typesetter who became its priest and died in 2023.",
+   "body": [
+    "The Mokattam research note tells the miracle story in full, with the caliph, the challenge, the cobbler and the three days of prayer, and it treats the zabbaleen's twentieth-century history. None of that is repeated here. This part adds two things the note lacks: a closer look at where the miracle story is actually written down, and the life of the priest who built the modern church, which ended after the note was written.",
+    "A small date is worth announcing to the group. Coptic tradition places the moving of the mountain on 27 November 979, the date of this edition, and the monastery dates the expansion of its cathedral to 27 November 1994 (samaanchurch.com).",
+    "## Who wrote the miracle down",
+    "The research note follows the traditional account that Bishop Sawirus ibn al-Muqaffa', a contemporary of the event, recorded it in the History of the Patriarchs. That attribution needs correcting. Modern scholarship, following Johannes den Heijer's 1989 study in the Louvain series CSCO Subsidia, holds that the History of the Patriarchs in its Arabic form was compiled by Mawhub ibn Mansur ibn Mufarrij, a deacon of Alexandria who lived c. 1025–1100, drawing on earlier Coptic material (Wikipedia, History of the Patriarchs of Alexandria, citing den Heijer). On that view the written account of the miracle comes from roughly a century after the event, not from an eyewitness. Exactly which earlier source lay behind Mawhub's chapter on Pope Abraham could not be verified for this edition; treat it as an open question.",
+    "Two further cautions belong in a fair account. Influential Egyptian Muslim historians, among them Ahmad Zaki Pasha and Muhammad Abdullah Enan, rejected the story (Wikipedia, Simon the Tanner). And the popular date of 979 sits awkwardly with the reign of al-Mu'izz, who died in 975; the Coptic tradition attaches the event to him regardless. None of this settles whether something extraordinary happened. It does mean the group should hear the story as the treasured memory of a persecuted church, written down by its own historians, rather than as a documented event.",
+    "## The relics",
+    "The saint's body has its own modern history. Searches began in 1989, and on 4 August 1991 a skeleton was found about a metre below the floor during restoration of the Church of the Holy Virgin at Babylon el-Darag in Old Cairo (Wikipedia, Simon the Tanner). OrthodoxWiki instead places the find in the Hanging Church; the monastery's account names the Virgin Mary church of Babylon el-Darag, mentions a clay pot found beside the remains and records their transfer to the cathedral on 11 July 1992 under Pope Shenouda III. The Babylon el-Darag version has the better support. Identification rested on church tradition and the circumstances of the find, not on any published scientific test that this edition could find.",
+    "## Farahat, the typesetter",
+    "The modern church begins with a layman. Ramez Atallah, former head of the Bible Society of Egypt, wrote in Christianity Today (30 October 2023) that Farahat Ibrahim was born in 1941 and worked as a typesetter at the printing press of St Mark's Cathedral. He came to faith through the Society for the Salvation of Souls, a Coptic revival movement that stayed inside the Orthodox Church, and in 1972 led his neighbourhood's garbage collector, a man named Qidees, to faith. Following Qidees home, he found a Coptic community of about 14,000 at the foot of the hills.",
+    "Atallah records that, after nights of prayer in a cave above the village, Farahat took a torn Arabic Bible page from Acts 18, with its promise that the Lord is with him and no one will harm him, as his call. The monastery dates the discovery of the great cave to 1974. Egypt Independent reports that Pope Shenouda III ordained him on 15 January 1978; he took the name Samaan, after the tanner saint. The first cave auditorium, with about 3,000 seats, opened in 1990.",
+    "## A contested, beloved priest",
+    "Abouna Samaan was never a conventional Orthodox priest. He held a Thursday evening meeting for the community and a weekly service of prayer for deliverance and healing, and Atallah notes that some Coptic leaders accused him of Protestant tendencies; his friendship with Shenouda III protected him. After a new diocese and bishop were created in the area, the two did not agree on many issues. He welcomed every Egyptian denomination and many evangelical visitors.",
+    "He died on 11 October 2023. Atallah gives his age as 81, Egypt Independent as 82. More than 40,000 people attended the funeral at the cave churches, which Atallah calls perhaps the largest Christian funeral in Coptic Orthodox history; Egypt Independent adds that hundreds of Muslims came. In August 2026 the Governor of Cairo, Dr Ibrahim Saber, toured the monastery and met its priests (Cairo Governorate, 6 August 2026).",
+    "## What the numbers do not agree on",
+    "The sources disagree on almost every count: the monastery names five churches and a hall, the Governorate six, AFP seven; capacity runs from 20,000 to Atallah's 25,000 seats. The founding is dated 1974, 1975 or, for the priest's ministry, 1978. Merrick should round, not choose: 'six or seven churches', 'room for tens of thousands'."
+   ],
+   "why": "The group will hear the miracle told as plain fact by guides and by Coptic hosts. Knowing that its written source is later, and that Muslim historians dispute it, lets the pastor honour the story without staking the gospel on it. Abouna Samaan's recent life gives the group a witness they can verify, and a reminder that the church they visit is still in mourning.",
+   "questions": [
+    "How should we tell a miracle story that a church treasures but historians cannot confirm?",
+    "What strikes you about a typesetter and a garbage collector being at the root of this church?",
+    "Why might a revivalist priest inside an ancient church be both loved and distrusted?"
+   ],
+   "source": {
+    "outlet": "Christianity Today",
+    "title": "The Cave Church's Abouna Samaan Ministered to Cairo's Garbage Collectors",
+    "author": "Ramez Atallah",
+    "url": "https://www.christianitytoday.com/2023/10/cave-church-cairo-garbage-city-coptic-abouna-samaan-tribute/",
+    "published": "2023-10-30",
+    "readMins": 8
+   }
+  },
+  {
+   "category": "Culture",
+   "kicker": "Stench, status, welcome",
+   "headline": "The tanner's trade was despised, not unclean",
+   "dek": "Ancient Jewish law kept tanneries downwind and tanners from high office, which reframes both Peter's host in Joppa and the saint of Mokattam.",
+   "body": [
+    "The research note calls Simon's trade ritually unclean in Jewish, Islamic and popular Christian purity systems. For the Jewish side, at least, the best recent scholarship says otherwise, and the correction matters because the group will meet another Simon the tanner in the Bible. This part sets the ancient world of the tanner first, then turns to the community the group will meet this afternoon and how to honour it.",
+    "## What the rabbis actually said",
+    "The Mishnah treats tanneries as a nuisance to be placed carefully. Bava Batra 2:9 requires carcasses, graves and tanneries to be kept fifty cubits from a town, and a tannery to be built only on its eastern side (Sefaria; Encyclopaedia Judaica, 'Leather Industry and Trade'). The usual explanation is the prevailing west wind of the land, which would carry the smell away from the houses. Ketubot 7:10 lists the tanner among the men whose wives may demand a divorce, because the smell was thought unbearable.",
+    "Status followed the smell. According to the Talmud, neither a king nor a high priest may be appointed from among tanners, and Encyclopaedia Judaica is careful to add that this is because the occupation was despised, not because the tanner was ritually unfit (Kiddushin 82a). Tanners were also exempted from the duty of appearing at the Temple at the pilgrim festivals, on account of their odour (Hagigah 7b, as summarised in the Encyclopaedia Judaica).",
+    "## Simon of Joppa",
+    "This changes how one reads Acts. Peter lodged 'for many days' in Joppa with 'a certain Simon, a tanner' (Acts 9:43), whose house was by the sea (10:6), and on that roof he saw the sheet of clean and unclean animals. Many commentators have taken the tanner's house as a sign that Peter had already loosened his purity practice. Isaac Oliver, writing in New Testament Studies (vol. 59, 2013), examined the rabbinic passages usually cited and found that none treats tanning as ritually defiling. The rabbis disliked tanners for their stench and dirt and sometimes doubted their morals; that is all. Acts 9:43 is therefore a clue to the social level of some early believers, not evidence that purity law had been set aside.",
+    "The point is subtle but useful for the pastor. The scandal of the tanner's house was social, not ceremonial: Peter stayed with a man respectable people avoided. That is exactly the scandal of Mokattam.",
+    "## Tanner or cobbler?",
+    "The saint's Arabic names carry the same ambiguity. He is remembered both as Sama'an al-Dabbagh, the tanner, and as Sama'an al-Kharraz, the cobbler or leather-stitcher; the Cairo Governorate's 2026 report uses al-Kharraz (OrthodoxWiki; Cairo Governorate). The two crafts sat at different points of the same leather economy, and the ambiguity is a small reminder that the tradition remembered a working man, not a clerical one. AFP's description of a relief showing St Simon holding a needle reflects the cobbler version.",
+    "## The community today",
+    "The Mokattam note gives the settlement's history and its recycling economy. What the group will meet is a neighbourhood at work: men unloading trucks, women and teenagers sorting in ground-floor rooms, smells that are strong even in winter. Abroad, Garbage City is also known through Garbage Dreams, a 2009 documentary directed by Mai Iskander (Wikipedia, Manshiyat Naser). Many residents are used to visitors; few enjoy being treated as a spectacle.",
+    "The church the group visits is Coptic Orthodox, shaped by Abouna Samaan's revivalist style. Thursday is its main meeting night. The group's Monday visit will probably find a quieter site, with clergy and servants who host many foreign groups. The Coptic Nativity fast, covered in the overture edition, will be under way.",
+    "## How to honour them",
+    "Keep cameras down on the drive through the settlement. GOV.UK's Egypt advice (still current on 26 November 2026) says photographing children is prohibited and notes sensitivities about photographing religious buildings; in Garbage City children are everywhere. Ask before photographing any adult, and photograph the carvings rather than the people.",
+    "Greet people as neighbours, not as a charity: a nod and salaam alaykum or, to Christians, a simple 'peace' is enough. Do not hand out money or sweets from the bus. If the group wishes to give, give once, through the monastery, by envelope from the TL.",
+    "Dress as for church: shoulders and knees covered, and women may carry a scarf in case local women in the sanctuary cover their heads (local practice varies; unverified for this church). Do not walk behind the iconostasis or into the altar area. And keep the gospel conversation inside the group: GOV.UK notes that it is illegal in Egypt to encourage people to convert. Hosts who welcome a foreign Protestant group trust it not to cause them trouble."
+   ],
+   "why": "Correcting the purity claim makes the pastor's reading sharper: the Mokattam saint and Peter's host were despised for the work they did, which is the same thing the zabbaleen face today. For the pilgrim, the practical rules turn that insight into conduct: no cameras on children, no handouts, no proselytising, and gifts given through the church.",
+   "questions": [
+    "If tanning was despised rather than unclean, what does Peter's stay in Joppa say about the company he kept?",
+    "What is the difference between visiting a poor neighbourhood and treating it as a sight?",
+    "How could our group leave the monastery better off, and not merely moved?"
+   ],
+   "source": {
+    "outlet": "New Testament Studies",
+    "title": "Simon Peter Meets Simon the Tanner: The Ritual Insignificance of Tanning in Ancient Judaism",
+    "author": "Isaac W. Oliver",
+    "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/simon-peter-meets-simon-the-tanner-the-ritual-insignificance-of-tanning-in-ancient-judaism/87E0D41AE589DC4945CF9DEECF26748A",
+    "published": "2013-01",
+    "readMins": 20
+   }
+  },
+  {
+   "category": "Theology",
+   "kicker": "Service prep · Matthew 17",
+   "headline": "Jesus answers Moses' lament with his presence",
+   "dek": "Read with Deuteronomy 32, Numbers 14 and Zechariah 4, Matthew 17:14–20 turns a saying about mountains into a promise about who stays with failing disciples.",
+   "body": [
+    "Hermeneutical lens: Canonical-Intertextual. This is prep material for service #1 at the Cave Church, not a finished sermon; Merrick will run Agent Exegesis and Sermon Drafter separately. The Mokattam research note already does the lexical work on oligopistia, the qualitative 'as' of the mustard seed, the demonstrative 'this mountain' and the five-step structure of the pericope, and the sermon 3D Faith already makes the point that faith is not a size by which we control God. This edition does not repeat those. It asks which Old Testament voices Matthew makes audible in these verses, and where Matthew himself resolves them.",
+    "## The pericope as the text sets it",
+    "The unit is Matthew 17:14–20. It opens with a change of place and audience: 'when they came to the crowd' (17:14) follows the descent from the mountain in 17:9. It closes with Jesus' saying in 17:20; 17:22 begins a new scene with the second passion prediction. The episode is therefore framed by glory above (17:1–8) and suffering ahead (17:22–23), and it should be read with both in view. The service should read 17:14–20 in full and, if time allows, introduce it with 17:9.",
+    "Verse 21, 'this kind does not go out except by prayer and fasting', is absent from the original hand of Codex Sinaiticus, from Codex Vaticanus and Codex Koridethi and from several early versions, and present in Codex Ephraemi, Codex Bezae and the later Byzantine text; it is generally judged to have been imported from Mark 9:29 (Wikipedia list of omitted verses, summarising the standard apparatus). Even in Mark the words 'and fasting' are missing from Sinaiticus and Vaticanus. The group will stand in a church whose three-day fast is woven into its memory of Matthew 17, and will see Sinaiticus' home at St Catherine's the next day. The pastoral line is gentle: honour the Coptic fast as faithful practice, but build the sermon on verse 20, where Jesus himself locates the problem in faith, not technique.",
+    "## Moses' song on Jesus' lips",
+    "The rebuke of 17:17, 'O faithless and twisted generation', is not a generic complaint. Its wording, genea apistos kai diestrammenē, echoes the Song of Moses, where the Septuagint calls Israel 'a crooked and twisted generation' (Deut 32:5) and 'sons in whom there is no faith' (32:20). Commentators such as R. T. France (NICNT, 2007) and Davies and Allison (ICC) note the allusion. Paul uses the same phrase for the world around the Philippians (Phil 2:15).",
+    "The setting strengthens the echo. Moses came down Sinai with the tablets and found the people in failure below (Exod 32). Jesus comes down a mountain where Moses has just appeared with him (17:3) and finds his disciples failing below. Matthew's shape is deliberate: the new Moses descends into the old unbelief.",
+    "The second half of 17:17 carries another voice. 'How long shall I be with you? How long shall I bear with you?' recalls God's own question to Moses after the spies' report: 'How long will this people despise me? How long will they not believe in me?' (Num 14:11). In Numbers it is the LORD who asks how long. In Matthew it is Jesus. That is a Christological claim made without a title: the one who sighs over unbelief in the language of Israel's God is himself the God who has been 'with' this people.",
+    "Matthew has his own thread here. The phrase 'with you' (meth' hymōn) is Matthew's frame for the whole Gospel. Jesus is Emmanuel, God with us (1:23). He promises to be among two or three gathered in his name (18:20). He will drink the cup new 'with you' in the kingdom (26:29). And on the final mountain, where some still doubted (28:17), he says, 'I am with you always' (28:20).",
+    "Set 17:17 inside that line and its tone changes. 'How long shall I be with you?' sounds like a threat to leave. Matthew answers it eleven chapters later: always. The impatience is real, but it is the impatience of a presence that will not withdraw, not of a teacher about to resign. The disciples' failure in the valley does not end his being with them; his cross and resurrection secure it.",
+    "## Mountains in the prophets and the rabbis",
+    "What does it mean to say to a mountain, 'Move from here to there'? In the prophets mountains stand for obstacles that only God removes. Zechariah's word to Zerubbabel comes as the returned exiles struggle to rebuild the Temple: 'Not by might, nor by power, but by my Spirit', and then, 'Who are you, O great mountain? Before Zerubbabel you shall become a plain' (Zech 4:6–7). Isaiah's new exodus lowers every mountain and hill to make a road for the returning people (Isa 40:4). And Isaiah 54:10 sets the moving of mountains against the one thing that will not move: 'my steadfast love shall not depart from you.'",
+    "Matthew has a second mountain saying. After the cursing of the fig tree, Jesus tells the disciples they could say to 'this mountain' to be thrown into the sea (21:21; Mark 11:23). W. R. Telford's study The Barren Temple and the Withered Tree (1980) argued that, spoken on the road into Jerusalem, 'this mountain' points to the Temple Mount itself. Whatever one decides about that, the canonical pattern is consistent. The mountain is whatever stands in the way of God's purpose for his people, and only God can level it.",
+    "There is also a Jewish idiom in the background. The Babylonian Talmud contrasts two kinds of scholar: 'Sinai', who knows the whole tradition, and the 'uprooter of mountains', whose mind cuts through any problem (Berakhot 64a; Horayot 14a). Rav Yosef was called Sinai and Rabbah the uprooter of mountains; Sanhedrin 24a says watching Resh Lakish argue was like seeing him uproot mountains and grind them together (Sefaria). The idiom is attested in sources centuries later than the Gospels, so whether Jesus' hearers knew this exact phrase is a hypothesis; what is clear is that moving mountains was a Jewish image for doing the nearly impossible.",
+    "Read against that idiom, Jesus' saying is a reversal. Among the rabbis, mountains moved for the brilliant. In Matthew 17 they move for disciples who have just failed, provided their trust is in God and not in their own commission. Paul knew the saying and put it in its place: 'if I have all faith, so as to remove mountains, but have not love, I am nothing' (1 Cor 13:2).",
+    "The disciples had been given authority (10:1). They failed because they treated it as a possession. Jesus does not respond by giving them a stronger technique. He takes the boy, rebukes the demon and heals him 'from that hour' (17:18). The power is never detached from his person. That is why the saying ends 'nothing will be impossible for you': not because disciples become uprooters of mountains, but because the one who is God with them is the one for whom nothing is impossible (compare 19:26).",
+    "## Christ at the centre, and into practice",
+    "Three things follow, none of them a demand to try harder. First, failure in ministry is not the end of discipleship; the same disciples who fail in 17:16 are sent in 28:19. Second, the cure for divided faith is not intensity but attention: looking away from our own gifts to the one who is with us. Third, the church that gathers in a cave cleared by hand, among people who handle the city's refuse, is not a proof that faith always produces spectacular results. It is a sign that God's presence stays with despised people. The Duweika families in Part 1 prayed too. The promise of 17:20 does not guarantee that every mountain falls the way we want; it guarantees who remains.",
+    "## Proposed service flow (about 30 minutes)",
+    "00:00–03:00 Gathering. Merrick welcomes the group, thanks the monastery hosts by name, and gives the call to worship from Psalm 125:1–2: those who trust in the LORD are like Mount Zion, which cannot be moved.",
+    "03:00–08:00 Song and prayer. One familiar Indonesian or English hymn of trust, then a short prayer of thanks for the Coptic church and for Abouna Samaan's memory.",
+    "08:00–10:00 Reading. A pilgrim reads Matthew 17:14–20, introduced by 17:9. Merrick notes in one sentence that verse 21 is a later addition.",
+    "10:00–25:00 Message (15 minutes, three movements). Movement 1, the valley below the glory (17:14–17). Thesis: Jesus meets his disciples' failure with Moses' lament and God's own 'how long', because he is the God who has always borne with his people. Movement 2, the mountain and the seed (17:18–20). Thesis: in a world that thought mountains moved for the brilliant, Jesus says they move for those who look away from themselves to God. Movement 3, 'with you' (28:20). Thesis: the one who asks 'how long shall I be with you?' is the one who promises 'always', and that, not our strength, is why nothing will be impossible.",
+    "25:00–28:00 Response. One minute of silence. Then prayer in three parts: for the zabbaleen and the monastery; for one 'mountain' each pilgrim names silently; for the group's journey into Sinai.",
+    "28:00–30:00 Lord's Prayer together, then the benediction of Jude 24–25: to him who is able to keep you from stumbling.",
+    "## Landing illustration from the site",
+    "Use the cave and the torn page together. Point to the overhang: some 140,000 tonnes of rock were carried out of this mountain, by hand and by machine, to make room for worship. That is a mountain that moved, slowly, by people who prayed and dug. Then tell what Ramez Atallah records: that it began with a typesetter praying in a cave above this village, holding a torn page of Acts 18 with the Lord's words, 'I am with you'. The church did not begin with someone who could move mountains. It began with a man who believed that Jesus was with him, among the people everyone else avoided. Close on Matthew 28:20."
+   ],
+   "counterpoint": "The strongest alternative reading takes 'this mountain' as more than hyperbole for difficulty. On this view, building on Telford's reading of Mark 11:23 and on prophetic texts such as Jeremiah 51:25, where Babylon is a 'destroying mountain', and Zechariah 4:7, the mountain stands for a hostile power, demonic or imperial, that God's people confront in an exorcism like the one in 17:18. Faith would then be the means by which the kingdom displaces Satan's rule, not a general promise about obstacles. The reading fits Matthew's exorcism context well and links to the Giza edition's empire theme; its weakness is that 17:20 ends with a universal 'nothing will be impossible', which seems wider than one hostile power.",
+   "why": "This is the first service of the trip and sets its tone. Reading Matthew 17 through Moses, Numbers and Zechariah keeps the message from becoming a call to stronger faith and makes it a word about Christ's presence with disciples who fail, which is what a tired group on Day 3 needs. For the pastor it supplies a clear spine, a textual note handled with respect for the Coptic hosts, and a landing drawn from the cave itself.",
+   "questions": [
+    "Where have you most recently felt like the disciples in the valley, given authority but unable to use it?",
+    "How does it change Jesus' 'how long?' to know that he is speaking the words of Israel's God?",
+    "What 'mountain' will you name silently in the response, and what does 'I am with you always' say to it?"
+   ],
+   "source": {
+    "outlet": "Eerdmans (NICNT)",
+    "title": "The Gospel of Matthew",
+    "author": "R. T. France",
+    "url": "https://www.eerdmans.com/9780802825018/the-gospel-of-matthew/",
+    "published": "2007",
+    "readMins": 30
+   }
+  },
+  {
+   "category": "Field Brief",
+   "kicker": "Monday 21 December",
+   "headline": "Running a service in a working neighbourhood",
+   "dek": "The Mokattam stop needs a booked space, a portable speaker, a firm leaving time and cameras down from the moment the bus turns off the main road.",
+   "body": [
+    "The Giza edition's brief covers the whole of Day 3: the shuttles, the shops, the night drive to Dahab, the FCDO advice and the rule that Tesa counts during the service. This brief covers only the Mokattam stop and the service itself.",
+    "## How the stop runs",
+    "Plan on about 90 minutes on site: 15 to arrive and gather, 30 for the service, 30 to see the cathedral and reliefs, 15 to count and leave. Tour operators sell Cave Church visits as half-day trips of four hours or more (AAA listings), so 90 minutes is tight but workable if the service space is ready.",
+    "The last part of the drive climbs through Manshiyat Naser on narrow, uneven lanes. Ask Panorama now whether a full-size coach reaches the monastery gate or whether the group must walk the last stretch; this edition could not verify current coach access. If there is a walk, put the elderly at the front with Tesa and the guide at the back.",
+    "On site expect stone steps and stone tiers without much handrail (unverified). Elderly pilgrims should sit in the lowest rows they can reach, not climb to the top for the view. Ask the monastery where the toilets are as soon as you arrive; do not assume there are many.",
+    "## Booking, space and kit",
+    "Service #1 is confirmed in the Prep Hub, but the space is not named. Ask Panorama, in writing, which room has been booked and for what time. The main cathedral is vast and echoing for 40 people. A smaller chapel such as St Mark's or St Paula, or the hall, will carry voices better (the chapel names come from the monastery's own list). Confirm that no Coptic liturgy or Thursday-style meeting overlaps the slot; a Monday afternoon should be quiet.",
+    "Preach from the front of the nave or a lectern the hosts offer, never from the altar area behind the iconostasis. Ask a monastery servant before moving any furniture.",
+    "Bring a portable speaker and lapel microphone, charged the night before. One printed A5 sheet per pilgrim with Psalm 125:1–2, the hymn, Matthew 17:14–20 and Jude 24–25, plus the Lord's Prayer for those who need the words. The B6 Pro holds the message notes. A gift envelope for the monastery, from the group, handed over by Merrick at the start. Spare scarves for women.",
+    "## Rules, security and the bus script",
+    "Cameras down from the moment the bus leaves the main road until the monastery gate: GOV.UK prohibits photographing children and notes sensitivities about photographing religious buildings (advice still current 26 November 2026). Inside, ask the hosts whether photography is allowed during the service.",
+    "GOV.UK lists religious sites among possible terrorist targets and says extra measures are in place at tourist sites. Expect a security check at the gate (unverified for this site) and keep passports on the person. No tracts or invitations to local people.",
+    "Bus briefing script (2 minutes): 'In ten minutes we enter the neighbourhood of the zabbaleen, Cairo's garbage collectors. Three things. First, phones and cameras down until I say so. There are children everywhere, and photographing them is not allowed in Egypt. Second, the smell is strong. That is someone's work, so no faces, no comments. Third, do not give money or sweets from the bus. Our group will give one gift through the church. When we arrive, Tesa will count us at the gate and lead us in; follow her flag. We will worship inside a mountain that people emptied by hand. The text is Matthew 17. Listen for one phrase: I am with you.'",
+    "## Handover, and what goes wrong",
+    "Merrick is TL until the bus doors open. At the gate he hands the count, the phone and the clock to Tesa and becomes pastor. Tesa calls a two-minute warning at 27 minutes. After the benediction Merrick stays pastor for five minutes of thanks to the hosts while Tesa gathers the group at the cliff plaza. He takes the TL role back at the bus door for the final count.",
+    "What commonly goes wrong. The bus is blocked by a truck: build 20 minutes of slack into the plan. The speaker dies: test it on the bus. Pilgrims drift into side chapels: name the plaza as the only meeting point. The service overruns and squeezes Dahab: Tesa's warning is binding. Someone photographs a child and an adult objects: the TL apologises at once and deletes the photo in front of them.",
+    "## Fun facts",
+    "1. Mariusz Dybich had no sculpting experience when he began carving the Mokattam reliefs; each work took between five days and half a year (Daily Sabah, AFP, 2019).",
+    "2. Ancient Jewish tanners were exempt from going up to the Temple at the festivals because of their smell (Hagigah 7b, per Encyclopaedia Judaica).",
+    "3. Tanneries were exempt from the duty of a mezuzah (Yoma 11a–b, per Encyclopaedia Judaica).",
+    "4. Rav Yosef, the scholar called 'Sinai', turned down the headship of his academy, according to Berakhot 64a (Sefaria).",
+    "5. Matthew uses the Greek word for mountain 16 times, more than any other Gospel (David Schreiner, Bible Study Magazine, 2020).",
+    "6. Only one known rabbinic sage, Yose ben Halafta, is remembered as a tanner (Encyclopaedia Judaica).",
+    "7. Abouna Samaan's funeral mass ran from 10 am to 2 pm in the cathedral, and many women came dressed in white (Egypt Independent, 2023)."
+   ],
+   "why": "A service among the zabbaleen can go wrong in small ways that leave a bad impression on hosts who have welcomed many foreign groups. A booked room, a working speaker, a clear handover and firm rules on cameras let the group worship well and leave the neighbourhood without having made anyone a spectacle.",
+   "questions": [
+    "Has Panorama confirmed in writing which room is booked, for what time, and whether the coach reaches the gate?",
+    "Who carries the speaker, the printed sheets and the gift envelope, and when will each be checked?",
+    "What will you say if a pilgrim insists on photographing the sorting rooms?"
+   ],
+   "source": {
+    "outlet": "GOV.UK (FCDO)",
+    "title": "Egypt travel advice: Safety and security",
+    "author": "Foreign, Commonwealth & Development Office",
+    "url": "https://www.gov.uk/foreign-travel-advice/egypt/safety-and-security",
+    "published": "2026-10-27",
+    "readMins": 10
+   }
+  }
+ ]
+}
