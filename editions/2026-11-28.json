@@ -1,0 +1,203 @@
+{
+ "number": 22,
+ "date": "2026-11-28",
+ "weekday": "Saturday",
+ "mix": "pilgrim",
+ "pilgrimDay": 5,
+ "special": false,
+ "intro": "Day five of twenty-three: the stretch of Day 3 nobody sees, when the coach dives under the Suez Canal after dark and runs down the Gulf of Suez to Dahab. New digs on Egypt's old frontier, a ship-trapped lake and a psalm about invisible footprints turn the Exodus-route debate into a lesson on the God who leads the long way round.",
+ "stories": [
+  {
+   "category": "Geography",
+   "kicker": "The isthmus",
+   "headline": "A frontier of lakes, now sliced by a canal",
+   "dek": "Between Cairo and Sinai lies a chain of shallow basins, and the group will cross it underground, after dark, at its southern end.",
+   "body": [
+    "Seen from above, the Isthmus of Suez is not a solid neck of land. It is a string of low hollows running north to south: the lagoons behind the Mediterranean coast, the Ballah depression south of Qantara, Lake Timsah at Ismailia, the Great and Small Bitter Lakes, and finally the head of the Gulf of Suez. Lake Timsah lies in a basin formed along a fault that runs from the Mediterranean to the Gulf of Suez through the Bitter Lakes. The canal, whose figures the Suez Canal note already gives, joined up an old landscape rather than cutting a new one.",
+    "That chain of basins is the reason the Exodus route can be argued about at all. Every serious candidate for the sea of Exodus 14 lies somewhere along it, or on one of the two gulfs beyond it. On the evening of Day 3 the group meets the chain at its far southern end, diving 1.63 kilometres under the canal at Shallufa, just north of Suez, through the Ahmed Hamdi Tunnel. Nobody will see water. That is worth saying on the bus before it happens, so the moment is not lost.",
+    "## The basins, north to south",
+    "Ballah is the basin that has changed the debate most. Between 1998 and 2008 James Hoffmeier's North Sinai Archaeological Project drilled and dated the now-dry Ballah depression. The geologists Stephen Moshier and Bahaa Gayed found that it held a real lake fed by a Nile branch, rising and falling with the annual flood. In wet seasons its three smaller basins could merge into one body about 20 kilometres from north to south and 14 to 15 kilometres across. One surveyed bank drops 3.5 metres in 100 metres, and parts may have been 6 to 8 metres deep when full (Hoffmeier, Tyndale Bulletin, 2021). Reeds two or three metres tall still grow in marshy patches west of the canal; the east bank is desert.",
+    "Lake Timsah, Arabic for Crocodile Lake, was a marshy basin of about 5.4 square miles that rarely reached a metre deep. In 1862 it was flooded with Red Sea water for the canal, and Ismailia was founded on its northern bank in March 1863. The Bitter Lakes were known to the Egyptians as km-wr, the great black one. Even today the Great Bitter Lake is saltier than the open sea: around 4.1 per cent in 2017, against about 3.5 for seawater. The Gulf of Suez, finally, is a long, narrow arm running north-west to south-east, a rift flanked by mountains on both sides.",
+    "## Wind on shallow water",
+    "For the Exodus question, the geography of wind matters more than the geography of depth. When a strong wind blows across shallow water for hours, the surface tilts and the upwind shore drains; oceanographers call this wind setdown. The isthmus has a documented case. In early 1882 Major-General Alexander Tulloch was surveying between Port Said and Qantara when an easterly gale stopped work. The next morning, he reported, Lake Manzala on the west side of the canal had disappeared.",
+    "Two research teams have modelled the effect. Doron Nof and Nathan Paldor used a north-westerly wind running along the axis of the Gulf of Suez and proposed that an underwater ridge could be exposed. Carl Drews and Weiqing Han, at the US National Center for Atmospheric Research, modelled instead the place where the old Pelusiac branch of the Nile entered a coastal lagoon, the Lake of Tanis. Under a steady easterly of 28 metres per second, their model opened a land bridge 3 to 4 kilometres long and 5 kilometres wide that stayed dry for about four hours (PLOS ONE, 2010). Drews himself objects that a north-south isthmus such as Ballah could not be drained by an east wind in the same way, which is why his site lies in the delta.",
+    "None of this proves or disproves anything. It shows that the text's east wind, which the Red Sea Crossing note treats theologically, describes a physical behaviour the ground is capable of. The pastor can say that plainly without turning God into weather.",
+    "## Late December on the road",
+    "The drive from Cairo to Suez crosses flat gravel desert. Past the tunnel, the road runs south down the eastern shore of the Gulf of Suez with the water on the right and the Sinai mountains on the left. December days on this coast are usually mild, around 20°C, and nights cool to the low teens or below (approximate climate figures; check the forecast 72 hours out). The Gulf is known for persistent northerly winds, so a stop on the shore can feel colder than the thermometer says. Sunset at Suez on 21 December falls around five o'clock (approximate), so almost all of this stretch will be driven in darkness.",
+    "## What to look for",
+    "On the approach to Suez, watch for the lights of ships at anchor in Suez Bay, waiting their turn to enter the canal; with traffic recovering this autumn there should be more of them than in 2024 (hypothesis about the evening itself). In the tunnel, notice the long descent: the road drops to a maximum of 51 metres below ground level. About 20 kilometres south of the tunnel exit, behind a Bedouin village on the main Suez to Sharm el-Sheikh road, are the springs of Oyun Musa, the Springs of Moses, which local tradition links with Marah or Elim of Exodus 15. Further south, between Ras Sudr and Abu Zenima near the mouth of Wadi Gharandal, hot water surfaces at Hammam Faraun, where steam turns small shoreline caves into natural saunas; Wadi Gharandal is one of the places proposed for Elim (tradition, unverified). At night none of these will be visible from the bus, so the job on the road is to name them as the kilometre posts pass, not to stop."
+   ],
+   "why": "The pilgrim who knows the isthmus is a chain of lakes understands why scholars argue and why the argument is honest rather than evasive. For the pastor, the geography supplies the evening's teaching moment: the group crosses the frontier of Exodus underground and in the dark, which is exactly the experience Psalm 77 describes. Naming the hidden landscape turns a dead stretch of road into part of the pilgrimage.",
+   "questions": [
+    "Why might the Bible's writers care more about the fact of a God-made path than its exact coordinates?",
+    "What changes for you when you learn that the land between Egypt and Sinai was once a chain of lakes and marshes?",
+    "How would you explain wind setdown to a fellow pilgrim without making the miracle smaller?"
+   ],
+   "source": {
+    "outlet": "PLOS ONE (via PubMed Central)",
+    "title": "Dynamics of Wind Setdown at Suez and the Eastern Nile Delta",
+    "author": "Carl Drews and Weiqing Han",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2932978/",
+    "published": "2010-09-01",
+    "readMins": 25
+   }
+  },
+  {
+   "category": "History",
+   "kicker": "Route debate",
+   "headline": "New digs put Migdol back on the map",
+   "dek": "Excavations on Egypt's old eastern frontier have turned the names in Exodus 14:2 from riddles into candidates, though not yet into answers.",
+   "body": [
+    "The Suez Canal note already sets out the three classic answers to where Israel crossed: near Suez, in the Bitter Lakes, or at Nuweiba on the Gulf of Aqaba. What it could not include is how much a quarter-century of fieldwork on Egypt's north-eastern frontier has shifted the argument. The group deserves to hear evidence rather than slogans, so here is what changed and what did not.",
+    "The short version: the place-names of Exodus 13 and 14 used to float. Several now have plausible anchors in a single Late Bronze Age landscape between Qantara and the Mediterranean. That is a real gain. It is not yet a located crossing.",
+    "## A fortified border, carved in stone",
+    "On the north wall of the Great Hypostyle Hall at Karnak, Seti I recorded his first campaign along what the Egyptians called the Ways of Horus, a fortified military highway with a chain of forts, each with a well, running along the north Sinai coast to Gaza. Returning, Seti marches prisoners to the border fortress of Tjaru, drawn split in two by a canal full of crocodiles (Karnak Great Hypostyle Hall Project, University of Memphis). Egyptian archaeologists have since found Tjaru at Tell Hebua, two massive New Kingdom forts on either side of a Nile distributary. Hoffmeier's team excavated the next station, Tell el-Borg, which he identifies with a fort called the Dwelling of the Lion.",
+    "This matters for Exodus 13:17. The \"way of the land of the Philistines\" that God refused was not open desert. It was Egypt's army road, garrisoned and watered. The Theology part of this edition takes up why that refusal is the point.",
+    "## Migdol from a spy plane",
+    "Exodus 14:2 places the camp \"between Migdol and the sea\", before Pi-hahiroth and opposite Baal-zephon. The Seti reliefs and Papyrus Anastasi I list a Migdol of Menmaatre after Tjaru and the Dwelling of the Lion, long linked to the Migdol of Exodus but never located. Eliezer Oren's survey had recorded a New Kingdom site he labelled T-211 at the southern tip of an ancient lagoon the Egyptians called Shihor, the Waters of Horus. A 1957 aerial photograph shows the walls of a fort with what look like the curved lines of a moat, and a 1967 CORONA spy-satellite image shows a rectangular outline. Hoffmeier proposes T-211 as Late Bronze Age Migdol.",
+    "He then builds a cluster. The Egyptian Onomasticon of Amenemope lists p3 twfy, the papyrus marsh, beside Tjaru, at a spot that should lie just south of it, which is where the Ballah Lakes are; the Red Sea Crossing note gives the reed etymology, and the new point is that the Egyptian name now has a place. A defunct Nile channel found near Tell el-Borg might answer to Pi-hahiroth, which Hoffmeier connects with an Egyptian word that James Allen renders \"canal\". Papyrus Anastasi III also mentions a body of water that \"belongs to Baal\". On this reading all four names in Exodus 14:2 fall within roughly fifteen kilometres east of Qantara (Hoffmeier, 2021). He also argues that the Arabic place-name Abu Sefêh, on the northern shore of Ballah, preserves the old twfy.",
+    "## Runaways on the same road",
+    "Two Egyptian letters bring the frontier to life. In Papyrus Anastasi V, from around 1200 BC, an official writes that he was sent from the palace after two slaves; at the enclosure-wall of Tjeku he learned they had passed, and a scout reported them north of the Migdol of Seti-Merneptah (Center for Online Judaic Studies, translation from the British Museum papyrus). In Papyrus Anastasi VI, frontier officials report letting Shasu tribes of Edom pass the fortress of Tjeku to the lakes of Pithom to keep their flocks alive. Neither text mentions Israel. Both show a border that logged who left and who came in, and for which chasing escaped labourers was routine paperwork. Exodus 14:5, \"When the king of Egypt was told that the people had fled\", reads like such a report.",
+    "A third letter adds the environment. Papyrus Anastasi VIII, written by a scribe who died in the 39th year of Ramesses II, around 1240 BC, complains that drought in the p3 twfy region had stopped the usual deliveries from the frontier. As Nile floods weakened, the eastern branches silted up, and the delta capital Pi-Ramesses was abandoned around 1130 BC (Hoffmeier, citing Groll and Butzer). The lakes of the Exodus were real, and they were shrinking.",
+    "## The southern and Arabian alternatives",
+    "The southern tradition is old. At the head of the Gulf of Suez stood Clysma, rebuilt by Trajan, a bishopric by the 340s, with anchorites on the nearby Mountain of Clysma; Christian visitors were shown the crossing there (the Suez note covers Egeria). Some modern researchers still defend the northern Gulf of Suez, arguing that a reef there sat nearer the surface around 1500 BC. The Aqaba theory rests largely on popular claims. Ron Wyatt said he found gold-veneered chariot wheels while diving in the Gulf of Aqaba in 1978; no independent testing of the objects was ever done, and two fellow Seventh-day Adventist researchers catalogued 92 discoveries he claimed. Against a distant gulf, Hoffmeier and Barry Beitzel note that the itineraries list only two camps before the sea, which puts it near Egypt.",
+    "## What the evidence will and will not bear",
+    "Rank it for the group in three tiers. Probable region: the north-eastern frontier, the isthmus between the delta and Sinai. Possible sites: Ballah, the Shihor lagoon, the Lake of Tanis, the Bitter Lakes, the head of the Gulf of Suez. Unsupported: chariot wheels on the Aqaba seabed. The Ramesside setting of these names also feeds the dating debate. Defenders of a fifteenth-century Exodus (around 1446 BC) read them as later updating of older names; defenders of a thirteenth-century date see them as evidence of their view. Both are held by careful scholars. The honest sentence on the bus is this: tonight we cross the right frontier, almost certainly not the right spot."
+   ],
+   "why": "Pilgrims are often handed confident maps, then meet sceptical documentaries, and lose trust in both. Showing them how evidence is weighed, with real Egyptian forts and letters, protects faith from overclaiming and from cynicism at once. For the pastor it models the posture the whole trip needs at debated sites: firm on what Scripture claims, open on what the ground can show.",
+   "questions": [
+    "Does it strengthen or unsettle your faith that the exact crossing point is still unknown?",
+    "What do the runaway-slave letters add to how you imagine Exodus 14:5?",
+    "How can we speak about doubtful claims, such as the chariot wheels, without mocking those who believe them?"
+   ],
+   "source": {
+    "outlet": "Tyndale Bulletin",
+    "title": "The Hebrew Exodus from and Jeremiah's Eisodus into Egypt in the Light of Recent Archaeological and Geological Developments",
+    "author": "James K. Hoffmeier",
+    "url": "https://tyndalebulletin.org/api/v1/articles/32999-the-hebrew-exodus-from-and-jeremiah-s-eisodus-into-egypt-in-the-light-of-recent-archaeological-and-geological-developments.pdf",
+    "published": "2021-01-01",
+    "readMins": 35
+   }
+  },
+  {
+   "category": "Culture",
+   "kicker": "Frontier peoples",
+   "headline": "Pharaoh's border ran past other people's gods",
+   "dek": "Exodus 14 is staged opposite a shrine of the sailors' storm god, and the canal towns and Bedouin coast the group passes still live off the frontier.",
+   "body": [
+    "The world of Exodus 13 and 14 is a frontier world: forts, scribes, herders, sailors and their gods. The world the group drives through on Day 3 is a frontier too, organised around a waterway that pays a nation's bills. Both deserve a respectful reading.",
+    "This part starts with the text's world, then turns to the people on the road today.",
+    "## Camped facing the storm god",
+    "Baal-zephon is not just a place-name. Baal Zaphon was the Canaanite storm god in his role as lord of Mount Zaphon, Jebel Aqra on the Syrian coast. He was a protector of maritime trade; his temples received votive stone anchors from sailors, and he was worshipped at Tyre and Carthage and served as chief god of the Phoenician colony at Tahpanhes in the eastern delta. A fourteenth-century letter from Ugarit to Pharaoh equates him with Amun, and Herodotus places a later shrine of the same god, as Zeus Kasios, beside the marshy Lake Bardawil on the Sinai coast (summarised in Wikipedia's Baal-zephon article, drawing on the Dictionary of Deities and Demons in the Bible).",
+    "So the instruction of Exodus 14:2, to camp \"in front of Baal-zephon... facing it, by the sea\", sets Israel's defenceless camp under the eye of the god whom sailors trusted to rule the sea. Whatever the site, the story's religious geography is pointed: the sea will obey YHWH in full view of the shrine of the god who was supposed to own it. The Red Sea Crossing note discusses YHWH's victory over Egypt's gods; the new detail is that a Levantine sea god's name is written into the address.",
+    "## A border that counted bodies",
+    "Egyptian royal ideology cast Pharaoh as the keeper of order against chaos, and the frontier was where that order was administered. The letters in the History part show scribes recording runaways and herders. In that world a king who lets his labour force walk away is shamed, and pursuit restores face. Pharaoh's predicted verdict on Israel, nevukim hem ba'arets (14:3), \"they are astray in the land\", is a bureaucrat's reading of an unexplained route: people who leave the army road must be lost.",
+    "Israel would also have looked familiar to the frontier scribes. Exodus 12:38 says a mixed multitude went up with them, with flocks and herds. To an Egyptian border post, a column of herders with animals heading for the lakes resembled the Shasu of Edom whom Papyrus Anastasi VI shows being let through to water. The Exodus crowd was not an army; it was the kind of people the frontier logged every season.",
+    "## The canal towns today",
+    "Suez, Ismailia and Port Said exist because of the canal. Their founding was hard on Egyptians. The historian interviewed by CNRS notes that of 400,000 fellahin mobilised between 1859 and 1862, tens of thousands are thought to have died, though the numbers lack reliable archives; it was Britain that denounced the corvée, the Ottoman government that ordered work stopped, and Napoleon III who arbitrated. The peasants were replaced by Greek, Italian and Dalmatian labourers and by new dredgers, and for decades Egyptians held only the lowest jobs (CNRS News, 2020). The Suez note has the cost in lives; the new point is how long the canal's management stayed foreign.",
+    "The canal's fortunes still shape these towns. Lloyd's List Intelligence reports 1,338 transits in October 2026, a fifth consecutive post-crisis monthly high and 63 per cent up on a year earlier, but still about a third below the monthly average of 2,009 before the Houthi attacks began. Roughly half of containership transits are made with tracking switched off, and renewed Houthi attacks this year have kept the risk alive (Red Sea Brief, 12 November 2026; checked 28 November 2026). For a Suez family, the Red Sea crisis has meant lost revenue and lost work. Pilgrims who use the canal only as a sermon illustration of empire should remember that.",
+    "## The Bedouin of the coast and of Dahab",
+    "Along the Gulf of Suez road and at Dahab the group enters Bedouin country. The Mzeina are the largest Bedouin tribe in Sinai, and Dahab, once a small oasis and fishing village, is home to one of the largest Mzeina communities; Bedouin are reported to have lived there for more than 800 years (Wikipedia's Mzeina article; treat the figure as approximate). The springs of Oyun Musa lie behind a Bedouin settlement of the same name. These are Muslim communities who honour Musa as a prophet. The Qur'an tells of Pharaoh pursuing Moses and drowning in the sea, and many Muslims fast in the month of Muharram to commemorate that deliverance. The story the group is reading is, in a real sense, a shared one.",
+    "## How to honour them",
+    "First, speak of the crossing with care in public. Avoid announcing at a rest stop that this is where Pharaoh's army died; local people have their own traditions, and some are proud of Pharaonic heritage. Second, photographs: Egypt's tourism rules require an Egyptian citizen's written permission before you photograph them, photographing children is prohibited, and photographing officials without consent is not allowed (FCDO, checked 28 November 2026). Ask, or do not shoot. Third, rest-stop manners: modest dress even at night, greet staff, and leave a small tip for toilet attendants. Fourth, accept hospitality graciously if tea is offered at a Bedouin stop, and do not bargain aggressively over small purchases; the sums matter more to the seller than to the pilgrim. Finally, if a pilgrim wants to talk faith with a Muslim host, begin with what is shared, Musa and the sea, and listen before speaking."
+   ],
+   "why": "The text gains force when the pilgrim sees Israel as a column of herders under the gaze of a sea god and a border bureaucracy, not as an army in a film. For the pastor, the living communities are a test of whether the group's reading of Exodus produces humility or triumphalism. A pilgrim who honours the Suez worker and the Mzeina host has understood the story better than one who can only point at the water.",
+   "questions": [
+    "What does it mean to you that Israel camped facing a shrine to the god who was meant to rule the sea?",
+    "How should the canal's history of forced labour shape the way we talk about it in sermons?",
+    "What could you say to a Muslim host about Musa that would honour both your faith and theirs?"
+   ],
+   "source": {
+    "outlet": "Lloyd's List Intelligence",
+    "title": "Red Sea Brief - 12 November 2026",
+    "author": "Lloyd's List Intelligence",
+    "url": "https://www.lloydslistintelligence.com/resources/blog/red-sea-brief---12-november-2026",
+    "published": "2026-11-12",
+    "readMins": 5
+   }
+  },
+  {
+   "category": "Theology",
+   "kicker": "Exodus 13:17–14:4",
+   "headline": "God chose the long way round, on purpose",
+   "dek": "Read with Psalm 77 and Isaiah 63, the Exodus itinerary is less a map than a portrait of a Guide who routes around his people's fear and leaves no footprints to trace.",
+   "body": [
+    "Hermeneutical lens: Canonical-Intertextual, with lexical support. The pericope is Exodus 13:17–14:4, the hinge between the Passover and the sea. The Red Sea Crossing note works through 14:1–31 and its key words; this edition stays upstream, on the route itself, and follows its vocabulary into Psalm 77 and Isaiah 63.",
+    "## The road not taken (13:17–18)",
+    "The narrator begins with a refusal: God did not lead them by the way of the land of the Philistines, \"although it was nearer\", which the History part showed was Egypt's fortified army highway. God's reason is stated, which is rare: \"The people may have a change of heart when they see war\" (NJPS), and go back to Egypt.",
+    "\"God did not lead them\" is lo' nacham, from the verb nachah, to guide. \"Lest the people change their minds\" is pen-yinnachem, from nacham, to relent or be sorry. The Guide's steering (nachah) is shaped around the people's wavering (nacham). Rashi, following the Mekhilta, draws the conclusion: if even on the roundabout road they later said \"Let us head back to Egypt\" (Num 14:4), how much more on the direct one. The route is chosen for the fragility of the travellers, not the efficiency of the journey.",
+    "Verse 18 adds that God \"led the people round about\" (vayyassev, from savav, to turn), and that they went up chamushim. NJPS renders \"armed\" but notes the meaning is uncertain; Onkelos and Rashi read \"equipped\", while the Mekhilta punned on chamesh, five. Whatever the word means, the irony is plain: a people equipped for war is led away from war. Being equipped is not the same as being ready.",
+    "## Turn back, into the trap (14:1–4)",
+    "Then the strangest command: \"Tell the Israelites to turn back (veyashuvu) and encamp before Pi-hahiroth.\" The verb is shuv, the very word God feared in 13:17: \"and return (veshavu) to Egypt\". The people's feared turning back towards slavery is answered by God's commanded turning back towards the sea. Pharaoh will read the move as confusion: nevukim hem, \"they are astray in the land; the wilderness has closed in on them\" (14:3). The route that looks lost is the route that reveals. (The chapter 14 note covers the hardening.) God's route is deliberately unreadable to empire.",
+    "## The footprints no one can find (Psalm 77)",
+    "Psalm 77 is Asaph's night lament. In verse 3 (Hebrew numbering here; English Bibles run one lower) he says his soul refuses to be comforted: me'anah hinnachem nafshi, the same verb nacham. The turn comes at verse 12: \"I recall the deeds of Yah.\" The waters see God and writhe (v. 17), and then God's way runs through the sea and his path through mighty waters, yet \"your tracks could not be seen\" (v. 20). The last line closes the psalm: nachita, \"you led your people like a flock, in the care of Moses and Aaron\" (v. 21), the verb nachah again.",
+    "So the psalm moves from nacham refused to nachah remembered, the same pair of verbs that opens the Exodus route. The shared vocabulary is certain; intended echo is a hypothesis. Either way the canonical effect is plain. Comfort arrives not as a recovered site but as a remembered Guide. The footprints are unknown by definition, because the waters closed over them, and the route debate is exactly the condition the psalm anticipates.",
+    "## Isaiah's \"Where is he?\" (Isaiah 63:11–14)",
+    "In exile, Isaiah 63 remembers the same night as a question: where is the one who brought them up from the sea, put his holy spirit among them, divided the waters and led them through the deeps? Verse 14 says the spirit of the LORD gave them rest, and NJPS notes that a slight emendation yields \"guided them\". The question is about presence, not coordinates. Isaiah 64:1 asks God to tear the heavens and come down.",
+    "## The Christological centre",
+    "The Gospels answer \"where\" with a person. At Jesus' baptism the heavens are torn (schizomenous, Mark 1:10). On the mountain, Luke records that Moses and Elijah spoke with Jesus about his exodos, which he was about to fulfil at Jerusalem (Luke 9:31), and Jesus then sets his face toward the city by the long road (9:51). Hebrews calls him the archegos of salvation, made perfect through suffering while bringing many sons to glory (Heb 2:10); the word names a leader who goes first and opens the way. When Thomas says, \"We do not know the way\" (John 14:5), Jesus does not hand him a map: \"I am the way.\" The tracks in the sea are never recovered. The Guide is revealed.",
+    "## From text to practice",
+    "For leaders, routing around people's fear is not a concession; it is how God leads. Planning slow days for frail pilgrims is theology in action. For pilgrims, when the road seems to double back, through illness, delay or a closed border, Pharaoh's verdict (\"lost\") is not God's. Hold geography with an open hand and the Guide with a closed one. On the bus, pray Psalm 77 as Asaph did: name aloud specific deeds of God, because remembering is how the refused comfort becomes received guidance."
+   ],
+   "counterpoint": "The strongest alternative reading comes from Bernard Batto (\"The Reed Sea: Requiescat in Pace\", JBL 1983). He argues that every certain biblical referent of yam suf is the Red Sea or its two gulfs (1 Kgs 9:26; Num 21:4; Jer 49:21), and that Numbers 33 distinguishes \"the sea\" Israel passed through (v. 8) from yam suf, reached only after Marah and Elim (vv. 10–11). On his view a priestly editor telescoped the two, so hunting for the crossing in delta lakes misreads a genre that is theological and cosmic. It takes Numbers 33 seriously and fits Exodus 15. Its weakness is that the Ramesside cluster of Egyptian names Hoffmeier documents is hard to explain as late literary invention, and Numbers 33 can equally describe two real bodies of water.",
+   "why": "This text lets the pastor turn the most frustrating question of the day, where exactly was it, into the gospel's answer: we follow a Person, not a pin on a map. For the pilgrim it reframes every delay on a long trip as part of a route chosen for their sake. It also gives the group a shared prayer, Psalm 77, for the dark stretch of road.",
+   "questions": [
+    "Where in your life has God taken you the long way round, and what did it protect you from?",
+    "What would it mean to pray Psalm 77 honestly, starting with comfort refused?",
+    "How does Jesus calling himself \"the way\" change how you feel about not knowing the exact crossing site?"
+   ],
+   "source": {
+    "outlet": "Sefaria",
+    "title": "Rashi on Exodus 13 (with the NJPS text of Exodus 13:17–18)",
+    "author": "Rashi (Rabbi Shlomo Yitzchaki); translation via Sefaria",
+    "url": "https://www.sefaria.org/Rashi_on_Exodus.13.17",
+    "published": "2026-11-28",
+    "readMins": 10
+   }
+  },
+  {
+   "category": "Field Brief",
+   "kicker": "Day 3, after dark",
+   "headline": "A long night road, one tunnel, no photos",
+   "dek": "The Cairo-to-Dahab leg is the longest drive of the trip; route, toilets, headcounts and a camera ban decide whether it ends well.",
+   "body": [
+    "The Giza edition briefed Day 3 as a whole (night driving, convoys, passports, the Taba warning). This brief covers only the leg from the last Cairo showroom to the Dahab hotel, when everyone is tired.",
+    "The distance is roughly 550 to 600 kilometres, which by coach with stops and checkpoints is likely to take seven to nine hours (estimate; get Panorama's planned timing in writing). If the group leaves Cairo at 16:00, arrival in Dahab could be after midnight.",
+    "## The route, and why it matters",
+    "Of the ways across the canal into Sinai, only one keeps the group inside areas the FCDO does not flag. The FCDO (updated 27 October 2026, still current when checked on 28 November 2026) advises against all travel to North Sinai, against all but essential travel to Ismailiyah Governorate east of the canal, and against all but essential travel to the northern part of South Sinai beyond the St Catherine to Nuweiba road, except the coastal areas on the west and east of the peninsula. The compliant route is therefore Cairo, Suez, the Ahmed Hamdi Tunnel, then the west coast road through Ras Sudr, Abu Zenima and El Tor to Sharm el-Sheikh, then the mountain road to Dahab. Ask Panorama today to confirm that the driver will not use the Ismailia tunnels or a central Sinai road such as the one through Nekhl. Travelling against FCDO advice can invalidate insurance.",
+    "## The tunnel and the checkpoints",
+    "The FCDO is blunt: it is illegal to photograph military property or anything near it, and this includes the Suez Canal. From the outskirts of Suez until the first checkpoint after the tunnel, phones and cameras go away, including selfies. Expect security checks at the tunnel approach and several police or army checkpoints down the coast; officers may board, count passengers or ask for passports. Pilgrims stay seated and silent; Merrick answers questions.",
+    "## Bodies, stops and money",
+    "Seat the frailest pilgrims near the front door, each with a companion. Anyone with circulation problems wears compression socks and walks at every stop. The Sharm to Dahab road climbs and winds through mountains, so seat anyone prone to motion sickness at the front, with ginger sweets or medication taken before Sharm. Air-conditioning and desert nights are cold: keep one warm layer and the next morning's medicines in hand luggage.",
+    "Plan a stop every two to two and a half hours: near Suez, around Ras Sudr or Abu Zenima, and at El Tor or Sharm. Confirm with Panorama whether dinner is a restaurant stop or a packed meal; if packed, hand it out before the tunnel. Tell people not to stop drinking to avoid toilets. Rest-stop toilets often have attendants and may lack paper: every pilgrim carries tissues, hand gel and a few small Egyptian pound notes for the attendant (amount by local custom; the guide will advise; unverified). Agree prices before taking anything from vendors.",
+    "## Counts, handover and what goes wrong",
+    "At every stop, one rule: nobody leaves the lit forecourt. Tesa counts at the door going out and coming back; Merrick does a seat-by-seat count from the front before the doors close, using the fixed seat plan and buddy pairs. The driver does not move until both numbers match. Merrick runs the tunnel approach and checkpoints as TL. After the first checkpoint past the tunnel, Tesa takes the microphone for logistics: arrival time, room keys, tomorrow's wake-up and departure for St Catherine's. Then Merrick switches to pastor for seven minutes: lights dimmed, Psalm 77:11–20 (English numbering) read slowly, a minute of silence, prayer. Before arrival, Tesa hands out room keys on the bus so that check-in in Dahab takes minutes, not an hour.",
+    "What goes wrong: a pilgrim photographs a checkpoint and loses an hour, or a phone. Someone is left at a dark rest stop because a count was skipped. A pilgrim faints from dehydration after refusing water. The driver tires by midnight (ask Panorama for a second driver). The hotel kitchen has closed (agree a late snack).",
+    "## Bus briefing script (two minutes)",
+    "\"Friends, the next hours are long, so three things. One: in a few minutes we go under the Suez Canal. Photography near the canal and at checkpoints is illegal in Egypt. Phones away from now until I say. Two: at checkpoints, stay seated, passports ready when I ask, and let me do the talking. Three: at every stop, stay where it is lit, go with your buddy, and come straight back; we count every time, and the bus does not move until we are complete. Drink water, and walk at every stop. Tonight we cross from Africa into Asia, under the water, in the dark. Israel crossed this frontier and could not see the road either. Psalm 77 says your path was through the mighty waters, though your footprints were not seen. We follow the same Guide.\"",
+    "## Fun facts",
+    "1. In 1967 fifteen ships were trapped in the canal by the Six-Day War; fourteen anchored in the Great Bitter Lake and stayed until 1975 (Wikipedia, Yellow Fleet).",
+    "2. Their crews held a \"Bitter Lake Olympic Games\" in 1968 to match the Mexico City Olympics (Wikipedia, Yellow Fleet).",
+    "3. When the canal reopened in 1975, only two of those ships could move under their own power (Wikipedia, Yellow Fleet).",
+    "4. The Ahmed Hamdi Tunnel has an outside diameter of 11.6 metres and needed a Japanese-funded rehabilitation in 1992 because it leaked (Wikipedia).",
+    "5. The Plague of Justinian probably entered the Roman Empire through the port of Clysma, at modern Suez, before it was reported at Pelusium in July 541 (Wikipedia, Clysma).",
+    "6. The Revised Version's margin offers \"where the desert tracks begin\" as a meaning of Pi-hahiroth (Wikipedia, Pi-HaHiroth).",
+    "7. By 2007 the site Hoffmeier proposes as Migdol had been buried under a metre of sand and turned into a fruit plantation (Tyndale Bulletin, 2021, n. 45)."
+   ],
+   "why": "Today's research found that the FCDO's map of restricted zones decides which road the coach must take across the canal, and that the canal itself is a no-photo zone. For the pilgrim this is the difference between a tiring night and a dangerous or uninsured one. For the pastor it creates one protected moment, after the tunnel, when the whole group can pray the frontier crossing instead of sleeping through it.",
+   "questions": [
+    "What would help the oldest pilgrims in our group get through an eight-hour night drive safely?",
+    "How can the group keep the tunnel crossing prayerful while staying strictly within the photography rules?",
+    "What should Merrick and Tesa agree in advance about who speaks at checkpoints and who handles arrival?"
+   ],
+   "source": {
+    "outlet": "GOV.UK (Foreign, Commonwealth & Development Office)",
+    "title": "Egypt travel advice: Warnings and insurance; Safety and security",
+    "author": "FCDO",
+    "url": "https://www.gov.uk/foreign-travel-advice/egypt/warnings-and-insurance",
+    "published": "2026-10-27",
+    "readMins": 8
+   }
+  }
+ ]
+}
